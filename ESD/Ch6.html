@@ -1,15 +1,15 @@
 <!DOCTYPE html><html>
 <head>
 <title>6 Radiation pattern from the earthquake source‣ Seismology notes - ESD/GEOL3151</title>
-<!--Generated on Thu Jan 20 22:14:13 2022 by LaTeXML (version 0.8.4) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on January 20, 2022.-->
+<!--Generated on Mon Jan  9 21:25:35 2023 by LaTeXML (version 0.8.4) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on January 9, 2023.-->
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="LaTeXML.css" type="text/css">
 <link rel="stylesheet" href="ltx-book.css" type="text/css">
 <link rel="stylesheet" href="ltx-ulem.css" type="text/css">
 <link rel="stylesheet" href="ltx-listings.css" type="text/css">
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
 <link rel="up" href="Seismology.html" title="Seismology notes - ESD/GEOL3151">
 <link rel="start" href="Seismology.html" title="Seismology notes - ESD/GEOL3151">
 <link rel="prev" href="Ch5.html" title="Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151">
@@ -313,6 +313,40 @@ downloaded from <a href="https://ds.iris.edu/wilber3" title="" class="ltx_ref lt
 </figcaption>
 </figure>
 </section>
+<section id="S1.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">6.1.2 </span>How to find the takeoff angle, azimuth and back-azimuth</h3>
+
+<div id="S1.SS2.p1" class="ltx_para ltx_align_center">
+<object type="image/svg+xml" data="Figures/backaz.svg" id="S1.SS2.p1.g1" class="ltx_graphics" width="284" height="243" alt=""></object>
+</div>
+<div id="S1.SS2.p2" class="ltx_para">
+<p class="ltx_p">The takeoff angle depends on the epicentral distance, but there is no simple formula to compute it, as it will depend on the vertical distribution of wave velocities in the Earth. Instead, a pre-computed table can be used, which is shown in Exercise <a href="#exnum31" title="Exercise 6.31. ‣ Exercises ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">31</span></a> (“Retrieve the focal mechanism of Tohoku”).
+The azimut from epicenter to station, for an earthquake located at (lat., lon) =<math id="S1.SS2.p2.m1" class="ltx_Math" alttext="(\lambda_{e},\phi_{e})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>λ</mi><mi>e</mi></msub><mo>,</mo><msub><mi>ϕ</mi><mi>e</mi></msub><mo stretchy="false">)</mo></mrow></math> and a station located at <math id="S1.SS2.p2.m2" class="ltx_Math" alttext="(\lambda_{s},\phi_{s})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>λ</mi><mi>s</mi></msub><mo>,</mo><msub><mi>ϕ</mi><mi>s</mi></msub><mo stretchy="false">)</mo></mrow></math>, can be computed using spherical trigonometry and results in the formula</p>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E5.m1" class="ltx_Math" alttext="\operatorname{arc\,tan2}\left(\cos\phi_{s}\ \cos\phi_{e}\ \sin(\lambda_{s}-%
+\lambda_{e}),\ \sin\phi_{s}-\cos\Delta\ \sin\phi_{e}\right)" display="block"><mrow><mrow><mpadded width="+1.7pt"><mi>arc</mi></mpadded><mo>⁢</mo><mi>tan2</mi></mrow><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mpadded width="+5pt"><msub><mi>ϕ</mi><mi>s</mi></msub></mpadded></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mpadded width="+5pt"><msub><mi>ϕ</mi><mi>e</mi></msub></mpadded></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>λ</mi><mi>s</mi></msub><mo>-</mo><msub><mi>λ</mi><mi>e</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="7.5pt">,</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><msub><mi>ϕ</mi><mi>s</mi></msub></mrow><mo>-</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mpadded width="+5pt"><mi mathvariant="normal">Δ</mi></mpadded></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><msub><mi>ϕ</mi><mi>e</mi></msub></mrow></mrow></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.5)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S1.SS2.p2.m3" class="ltx_Math" alttext="\Delta" display="inline"><mi mathvariant="normal">Δ</mi></math> is epicentral distance. However if yo use the IRIS web page Wilber3, the azimut is given for earthquakes that are reported so you should not need to use this formula.
+However, you may need to compute the back-azimuth from the azimuth. The back-azimuth is needed to locate the station on the stereonet, and is obtained simply by</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E6.m1" class="ltx_Math" alttext="\textrm{b}_{az}=\textrm{az}+180^{o}" display="block"><mrow><msub><mtext>b</mtext><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi></mrow></msub><mo>=</mo><mrow><mtext>az</mtext><mo>+</mo><msup><mn>180</mn><mi>o</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.6)</span></td>
+</tr>
+</table>
+<p class="ltx_p">in degrees. This is because the azimuth in this context is measured over the interval <math id="S1.SS2.p2.m4" class="ltx_Math" alttext="[-180^{o},+180^{o}]" display="inline"><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><msup><mn>180</mn><mi>o</mi></msup></mrow><mo>,</mo><mrow><mo>+</mo><msup><mn>180</mn><mi>o</mi></msup></mrow><mo stretchy="false">]</mo></mrow></math>, and back-azimuth should point to the opposite direction than the azimuth (one is from quake toward the station, the other from station to quake).</p>
+</div>
+</section>
 </section>
 <section id="Sx1" class="ltx_section">
 <h2 class="ltx_title ltx_title_section">Exercises</h2>
@@ -492,7 +526,9 @@ to represent it.</p>
 <div id="exnum31" class="ltx_theorem ltx_theorem_exnew">
 <h6 class="ltx_title ltx_runin ltx_title_theorem">Exercise 6.31.</h6>
 <div id="exnum31.p1" class="ltx_para">
-<p class="ltx_p">Reconstruct the focal mechanism of the Tohoku, 2011 Mw 9.1 earthquake.
+<p class="ltx_p">– Retrieve the focal mechanism of the Tohoku earthquake
+
+<br class="ltx_break">Reconstruct the focal mechanism of the Tohoku, 2011 Mw 9.1 earthquake.
 You will use the following material, and connect to the the site
 <a href="https://app.visiblegeology.com/stereonetApp.html" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://app.visiblegeology.com/stereonetApp.html</a>.
 This is the same app as used for exercise 1. As noted above, a video in the lecture material
@@ -628,7 +664,8 @@ First let’s detail the positioning of a single station on the focal sphere. Ta
 <li id="Sx2.I1.i3.i5" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
 <div id="Sx2.I1.i3.i5.p1" class="ltx_para">
-<p class="ltx_p">To put it as Anders Sandberg, of Oxford’s Future of Humanity Institute "If your job can be easily explained, it can be automated". Don’t have a robot steal your job!</p>
+<p class="ltx_p">To put it as Anders Sandberg, of Oxford’s Future of Humanity Institute "If your job can be easily explained, it can be automated". Don’t have a robot steal your job!
+</p>
 </div>
 </li>
 </ul>
@@ -651,7 +688,8 @@ equator line. At this point, count the take-off angle from the center of the ste
 the station (in this case compressive = full bullet).
 After doing this for all stations, find the two orthogonal planes that separate the full bullets from the empty bullets.
 Rotate the transparency until you identify one meridian which separates
-compressive from tensile stations, draw the corresponding plane along the meridian, and its pole at <math id="Sx2.p1.m12" class="ltx_Math" alttext="90^{o}" display="inline"><msup><mn>90</mn><mi>o</mi></msup></math>. Then check whether any second plane exists passing through the first pole, which also separates the stations:</p>
+compressive from tensile stations, draw the corresponding plane along the meridian, and its pole at <math id="Sx2.p1.m12" class="ltx_Math" alttext="90^{o}" display="inline"><msup><mn>90</mn><mi>o</mi></msup></math>. Then check whether any second plane exists passing through the first pole, which also separates the stations:
+</p>
 <object type="image/svg+xml" data="Figures/Foc0.svg" id="Sx2.p1.g12" class="ltx_graphics ltx_centering" alt=""></object>
 <p class="ltx_p">(Note that if the fault has a strike component –not the case for this example– then no single plane will separate all
 the stations. You’ll obtain a fault plane and auxiliary plane which
@@ -678,7 +716,7 @@ Finally, you would obtain the following representation:</p>
 <div>
 <a href="Ch5.html" title="Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Faulting, fluids, sliding friction</span></a><a href="bib.html" title="Bibliography ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="Ch7.html" title="Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Magnitude and energy</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Thu Jan 20 22:14:13 2022 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+<div class="ltx_page_logo">Generated  on Mon Jan  9 21:25:35 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
 </div></footer>
 </div>
 </body>
