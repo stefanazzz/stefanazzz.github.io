@@ -1,0 +1,685 @@
+<!DOCTYPE html><html>
+<head>
+<title>6 Radiation pattern from the earthquake source‣ Seismology notes - ESD/GEOL3151</title>
+<!--Generated on Thu Jan 20 22:14:13 2022 by LaTeXML (version 0.8.4) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on January 20, 2022.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="ltx-ulem.css" type="text/css">
+<link rel="stylesheet" href="ltx-listings.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+<link rel="up" href="Seismology.html" title="Seismology notes - ESD/GEOL3151">
+<link rel="start" href="Seismology.html" title="Seismology notes - ESD/GEOL3151">
+<link rel="prev" href="Ch5.html" title="Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151">
+<link rel="next" href="Ch7.html" title="Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Elasticity ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Pores, cracks and stress concentrations ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Rupture of faults and cracks ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch8.html" title="Chapter 8 Waves: in theory and in the Earth ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Chx1.html" title="Appendix ‣ Seismology notes - ESD/GEOL3151">
+<link rel="bibliography" href="bib.html" title="Bibliography ‣ Seismology notes - ESD/GEOL3151">
+</head>
+<body>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Seismology.html" title="Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Seismology notes - ESD/GEOL3151</span></a><a href="Ch5.html" title="Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Faulting, fluids, sliding friction</span></a><a href="Ch7.html" title="Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Magnitude and energy</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_chapter">
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter">Chapter 6 </span>Radiation pattern from the earthquake source</h1>
+<div class="ltx_date ltx_role_creation"></div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_framed_underline">From this chapter you are expected to learn:</span></p>
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">The mathematical description of simple earthquake sources</p>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">The radiation pattern in the far-field</p>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">How to retrieve the focal mechanism of an earthquake</p>
+</div>
+</li>
+</ol>
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">6.1 </span>The double couple force equivalent</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">Fault motion can be considered as a discontinuity of displacement across a surface (dislocation) within an elastic body,
+which induces a perturbation and a re-arrangement of the surrounding medium. If the displacement is
+relatively impulsive, waves can be generated as a consequence of disequilibrium dynamics
+(change of momentum).
+In the 50’ there was some controversy about the precise mathematical significance of a dislocation
+and how to describe the source of perturbation that it would induce.
+Although many elastodynamic solutions had been obtained already in the 19th century and the beginning
+of the 20th century (Lamb, 1904), those
+were mostly concerned with the response to a single unidirectional force applied at a point.
+This type of simple source would correspond, for example, to a falling object (a meteor which hitting the surface of the Earth) and the solutions would allow to compute the triggered waves.
+Clearly the dislocation associated to earthquake faulting constitutes a more complex source
+of perturbation. Because elastodynamic solutions were traditionally derived in the presence of force impulses,
+there were discussions about what combination of forces could best describe an earthquake.
+Because the earthquake corresponds to an release of internal stress, there should be no net change in momentum
+(contrary to the case of a falling meteor). One proposal was to use
+a force couple: two equal forces applied in the opposite directions
+in the vicinity of a point, but with an infinitesimal offset.
+In fact, it was shown by Burridge and Knopoff (1964) that the simplest mathematical description
+of an earthquake source requires at least two force couples, i.e., the double couple solution.
+The elegant and rigorous demonstration was done by integrating the displacement discontinuity in the solution
+to the momentum equation (c.f. Aki and Richards book chapter 4, 1980),
+and showing that it was equivalent to a system of four forces
+resulting in no net change of momentum or moment.
+We develop here a more intuitive derivation, starting from remarking that an <span class="ltx_text ltx_font_italic">anelastic stress drop</span>
+takes place on a bound source surface in correspondence to an earthquake.
+Let <math id="S1.p1.m1" class="ltx_Math" alttext="\sigma_{ij}" display="inline"><msub><mi>σ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></math> be the elastic stress, and <math id="S1.p1.m2" class="ltx_Math" alttext="\tau_{ij}" display="inline"><msub><mi>τ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></math> the non-elastic perturbation (also known as
+the stress glut), resulting in a total stress <math id="S1.p1.m3" class="ltx_Math" alttext="\sigma_{ij}+\tau_{ij}" display="inline"><mrow><msub><mi>σ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>τ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow></math>. The stress glut is the perturbation
+of stress resulting form slip motion on a fault or crack. For example, as a failure occurs the fault will slip
+and release a given amount of shear stress. The perturbation due to fault slip can be introduced in a model
+of elastic behaviour by imposing a <span class="ltx_text ltx_font_italic">boundary condition</span> on the fault surface.
+In this case there are two possible options:
+(1) impose a displacement condition on the fault or (2) impose a stress condition on the fault. The two
+options are equivalent and produce the same result, the choice of one or another depends on what
+is more convenient for the solution of the problem.
+Using the change of momentum equation we may write</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E1.m1" class="ltx_Math" alttext="\rho\ \partial^{2}_{t}u_{i}=\partial_{j}\sigma_{ij}+\partial_{j}\tau_{ij}+f_{i}" display="block"><mrow><mrow><mpadded width="+5pt"><mi>ρ</mi></mpadded><mo>⁢</mo><mrow><msubsup><mo>∂</mo><mi>t</mi><mn>2</mn></msubsup><mo>⁡</mo><msub><mi>u</mi><mi>i</mi></msub></mrow></mrow><mo>=</mo><mrow><mrow><msub><mo>∂</mo><mi>j</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>j</mi></msub><mo>⁡</mo><msub><mi>τ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow><mo>+</mo><msub><mi>f</mi><mi>i</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S1.p1.m4" class="ltx_Math" alttext="\rho" display="inline"><mi>ρ</mi></math> is mass density, <math id="S1.p1.m5" class="ltx_Math" alttext="u_{i}" display="inline"><msub><mi>u</mi><mi>i</mi></msub></math> is the <math id="S1.p1.m6" class="ltx_Math" alttext="i_{th}" display="inline"><msub><mi>i</mi><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msub></math> component of particle displacement vector <math id="S1.p1.m7" class="ltx_Math" alttext="\mathbf{u}" display="inline"><mi>𝐮</mi></math>,
+<math id="S1.p1.m8" class="ltx_Math" alttext="\sigma_{ij}" display="inline"><msub><mi>σ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></math> the stress due to elastic strain, <math id="S1.p1.m9" class="ltx_Math" alttext="\tau_{ij}" display="inline"><msub><mi>τ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></math> the stress due anelastic strain (including the fault slip), <math id="S1.p1.m10" class="ltx_Math" alttext="f_{i}" display="inline"><msub><mi>f</mi><mi>i</mi></msub></math> the <math id="S1.p1.m11" class="ltx_Math" alttext="i_{th}" display="inline"><msub><mi>i</mi><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msub></math> component of the body forces vector <math id="S1.p1.m12" class="ltx_Math" alttext="{\mathbf{f}}" display="inline"><mi>𝐟</mi></math>.
+Assuming that the fault normal direction is <math id="S1.p1.m13" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math>, and that the stress glut will affect the
+shear stress componenet <math id="S1.p1.m14" class="ltx_Math" alttext="\tau_{xz}" display="inline"><msub><mi>τ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></msub></math> (and, due to symmetry, also <math id="S1.p1.m15" class="ltx_Math" alttext="\tau_{zx}" display="inline"><msub><mi>τ</mi><mrow><mi>z</mi><mo>⁢</mo><mi>x</mi></mrow></msub></math>) alone,
+we can write the explicit cases:</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E2.m1" class="ltx_Math" alttext="\begin{array}[]{l}\rho\ \partial^{2}_{t}u_{x}=\partial_{x}\sigma_{xx}+\partial%
+_{y}\sigma_{xy}+\partial_{z}\sigma_{xz}+\partial_{z}\tau_{xz}+f_{x}\\
+\rho\ \partial^{2}_{t}u_{y}=\partial_{x}\sigma_{yx}+\partial_{y}\sigma_{yy}+%
+\partial_{z}\sigma_{yz}+0+f_{y}\\
+\rho\ \partial^{2}_{t}u_{z}=\partial_{x}\sigma_{zx}+\partial_{y}\sigma_{zy}+%
+\partial_{z}\sigma_{zz}+\partial_{x}\tau_{zx}+f_{z}\end{array}" display="block"><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mpadded width="+5pt"><mi>ρ</mi></mpadded><mo>⁢</mo><mrow><msubsup><mo>∂</mo><mi>t</mi><mn>2</mn></msubsup><mo>⁡</mo><msub><mi>u</mi><mi>x</mi></msub></mrow></mrow><mo>=</mo><mrow><mrow><msub><mo>∂</mo><mi>x</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>x</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>y</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>z</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>z</mi></msub><mo>⁡</mo><msub><mi>τ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></msub></mrow><mo>+</mo><msub><mi>f</mi><mi>x</mi></msub></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mpadded width="+5pt"><mi>ρ</mi></mpadded><mo>⁢</mo><mrow><msubsup><mo>∂</mo><mi>t</mi><mn>2</mn></msubsup><mo>⁡</mo><msub><mi>u</mi><mi>y</mi></msub></mrow></mrow><mo>=</mo><mrow><mrow><msub><mo>∂</mo><mi>x</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>x</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>y</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>y</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>z</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></msub></mrow><mo>+</mo><mn>0</mn><mo>+</mo><msub><mi>f</mi><mi>y</mi></msub></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mpadded width="+5pt"><mi>ρ</mi></mpadded><mo>⁢</mo><mrow><msubsup><mo>∂</mo><mi>t</mi><mn>2</mn></msubsup><mo>⁡</mo><msub><mi>u</mi><mi>z</mi></msub></mrow></mrow><mo>=</mo><mrow><mrow><msub><mo>∂</mo><mi>x</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>z</mi><mo>⁢</mo><mi>x</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>y</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>z</mi><mo>⁢</mo><mi>y</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>z</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>z</mi><mo>⁢</mo><mi>z</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>x</mi></msub><mo>⁡</mo><msub><mi>τ</mi><mrow><mi>z</mi><mo>⁢</mo><mi>x</mi></mrow></msub></mrow><mo>+</mo><msub><mi>f</mi><mi>z</mi></msub></mrow></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">(the <math id="S1.p1.m16" class="ltx_Math" alttext="u_{y}" display="inline"><msub><mi>u</mi><mi>y</mi></msub></math> component does not have any perturbative term because there is no contribution <math id="S1.p1.m17" class="ltx_Math" alttext="\tau_{yz}" display="inline"><msub><mi>τ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></msub></math>).
+Now let’s chose a frame of reference such that the fault is centered at <math id="S1.p1.m18" class="ltx_Math" alttext="(x,y,z)=(0,0,0)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math>.
+The rupture (or the stress glut) extends over a surface area <math id="S1.p1.m19" class="ltx_Math" alttext="L^{2}" display="inline"><msup><mi>L</mi><mn>2</mn></msup></math> of zero thickness.
+Although the source area is distributed, it will look like a point from a faraway distance;
+we can treat it as a point source. However, to account for net change of stress
+within the volume surrounding the extended source area, we will multiply the stress glut amplitude
+by <math id="S1.p1.m20" class="ltx_Math" alttext="L^{3}" display="inline"><msup><mi>L</mi><mn>3</mn></msup></math> when using the point source model. Finally, if we are looking at periods which are much longer
+than the duration of the source, the latter will look like an impulse in time,
+and we choose <math id="S1.p1.m21" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math> as the origin time of the earthquake.
+To describe a source that is located at a point, and which has zero thickness, we will use
+the Dirac delta function <math id="S1.p1.m22" class="ltx_Math" alttext="\delta(\bm{x})" display="inline"><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒙</mi><mo stretchy="false">)</mo></mrow></mrow></math>:
+a generalized function or <span class="ltx_text ltx_font_italic">distribution</span> introduced by the physicist Paul Dirac.
+It is used to model an idealised function equal to zero everywhere, except at <math id="S1.p1.m23" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>, and whose integral
+is equal to one. The Dirac function, and its derivative <math id="S1.p1.m24" class="ltx_Math" alttext="\delta^{\prime}(\bm{x})" display="inline"><mrow><msup><mi>δ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒙</mi><mo stretchy="false">)</mo></mrow></mrow></math>
+can be symbolically represented as</p>
+<span class="ltx_inline-para ltx_minipage ltx_align_center ltx_align_middle" style="width:142.3pt;">
+<span id="S1.p1.p1" class="ltx_para ltx_minipage ltx_align_middle" style="width:28.5pt;"><object type="image/svg+xml" data="Figures/Dirac.svg" id="S1.p1.p1.g1" class="ltx_graphics" alt=""></object>
+</span>
+<span id="S1.p1.p2" class="ltx_para ltx_minipage ltx_align_middle" style="width:28.5pt;">
+<span class="ltx_p">and</span>
+</span>
+<span id="S1.p1.p3" class="ltx_para ltx_minipage ltx_align_middle" style="width:56.9pt;"><object type="image/svg+xml" data="Figures/DiracDer.svg" id="S1.p1.p3.g1" class="ltx_graphics" alt=""></object>
+</span></span>
+<p class="ltx_p">Finally, with the above assumptions our source function can be mathematically equated to :</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E3.m1" class="ltx_Math" alttext="\begin{array}[]{ll}s(\bm{x},t)&amp;=\Delta\tau\ L^{3}\times\delta(\bm{x})\ \delta(%
+\bm{y})\ \delta(\bm{z})\ \delta({t}),\\
+&amp;=M_{o}\times\delta(\bm{x})\ \delta(\bm{y})\ \delta(\bm{z})\ \delta({t}),\end{array}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mi>s</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒙</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mpadded width="+5pt"><mi>τ</mi></mpadded><mo>⁢</mo><msup><mi>L</mi><mn>3</mn></msup></mrow><mo>×</mo><mi>δ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒙</mi><mo rspace="7.5pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒚</mi><mo rspace="7.5pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒛</mi><mo rspace="7.5pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msub><mi>M</mi><mi>o</mi></msub><mo>×</mo><mi>δ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒙</mi><mo rspace="7.5pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒚</mi><mo rspace="7.5pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒛</mi><mo rspace="7.5pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.3)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S1.p1.m25" class="ltx_Math" alttext="\Delta\tau" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>τ</mi></mrow></math> is the magnitude of stress drop; accessorily, <math id="S1.p1.m26" class="ltx_Math" alttext="\Delta\tau\ L^{3}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mpadded width="+5pt"><mi>τ</mi></mpadded><mo>⁢</mo><msup><mi>L</mi><mn>3</mn></msup></mrow></math> has dimensions
+of a moment (N m), we will hereafter call it seismic moment and re-name it <math id="S1.p1.m27" class="ltx_Math" alttext="M_{o}" display="inline"><msub><mi>M</mi><mi>o</mi></msub></math>.
+Substitution of <math id="S1.p1.m28" class="ltx_Math" alttext="s(\bm{x},t)" display="inline"><mrow><mi>s</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒙</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> into Equation <a href="#E4" title="(6.4) ‣ 6.1 The double couple force equivalent ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.4</span></a> yeilds:</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E4.m1" class="ltx_Math" alttext="\begin{array}[]{l}\rho\ \partial^{2}_{t}u_{x}=\partial_{x}\sigma_{xx}+\partial%
+_{y}\sigma_{xy}+\partial_{z}\sigma_{xz}+M_{o}\,\delta(\bm{x})\,\delta(\bm{y})%
+\,\delta^{\prime}(\bm{z})\,\delta({t})+f_{x}\\
+\rho\ \partial^{2}_{t}u_{z}=\partial_{x}\sigma_{zx}+\partial_{y}\sigma_{zy}+%
+\partial_{z}\sigma_{zz}+M_{o}\,\delta^{\prime}(\bm{x})\,\delta(\bm{y})\,\delta%
+(\bm{z})\,\delta({t})+f_{z}\\
+\end{array}" display="block"><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mpadded width="+5pt"><mi>ρ</mi></mpadded><mo>⁢</mo><mrow><msubsup><mo>∂</mo><mi>t</mi><mn>2</mn></msubsup><mo>⁡</mo><msub><mi>u</mi><mi>x</mi></msub></mrow></mrow><mo>=</mo><mrow><mrow><msub><mo>∂</mo><mi>x</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>x</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>y</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>z</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></msub></mrow><mo>+</mo><mrow><mpadded width="+1.7pt"><msub><mi>M</mi><mi>o</mi></msub></mpadded><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒙</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒚</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>δ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒛</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><msub><mi>f</mi><mi>x</mi></msub></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mpadded width="+5pt"><mi>ρ</mi></mpadded><mo>⁢</mo><mrow><msubsup><mo>∂</mo><mi>t</mi><mn>2</mn></msubsup><mo>⁡</mo><msub><mi>u</mi><mi>z</mi></msub></mrow></mrow><mo>=</mo><mrow><mrow><msub><mo>∂</mo><mi>x</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>z</mi><mo>⁢</mo><mi>x</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>y</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>z</mi><mo>⁢</mo><mi>y</mi></mrow></msub></mrow><mo>+</mo><mrow><msub><mo>∂</mo><mi>z</mi></msub><mo>⁡</mo><msub><mi>σ</mi><mrow><mi>z</mi><mo>⁢</mo><mi>z</mi></mrow></msub></mrow><mo>+</mo><mrow><mpadded width="+1.7pt"><msub><mi>M</mi><mi>o</mi></msub></mpadded><mo>⁢</mo><msup><mi>δ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒙</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒚</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒛</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><msub><mi>f</mi><mi>z</mi></msub></mrow></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.4)</span></td>
+</tr>
+</table>
+<p class="ltx_p">By inspection, as the source terms <math id="S1.p1.m29" class="ltx_Math" alttext="M_{o}\,\delta(\bm{x})\,\delta(\bm{y})\,\delta^{\prime}(\bm{z})\,\delta({t})" display="inline"><mrow><mpadded width="+1.7pt"><msub><mi>M</mi><mi>o</mi></msub></mpadded><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒙</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒚</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>δ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒛</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math>
+and <math id="S1.p1.m30" class="ltx_Math" alttext="M_{o}\,\delta(\bm{{}^{\prime}}{x})\,\delta(\bm{y})\,\delta(\bm{z})\delta({t})" display="inline"><mrow><mpadded width="+1.7pt"><msub><mi>M</mi><mi>o</mi></msub></mpadded><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mmultiscripts><mi>x</mi><mprescripts></mprescripts><none></none><mo mathvariant="bold">′</mo></mmultiscripts><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒚</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒛</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> are next to body forces <math id="S1.p1.m31" class="ltx_Math" alttext="f_{x}" display="inline"><msub><mi>f</mi><mi>x</mi></msub></math> and
+<math id="S1.p1.m32" class="ltx_Math" alttext="f_{y}" display="inline"><msub><mi>f</mi><mi>y</mi></msub></math>, they must have same dimensions and therefore correspond to forces.
+In fact, because of the derivative <math id="S1.p1.m33" class="ltx_Math" alttext="\delta^{\prime}(\bm{z})" display="inline"><mrow><msup><mi>δ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝒛</mi><mo stretchy="false">)</mo></mrow></mrow></math> in the first, and <math id="S1.p1.m34" class="ltx_Math" alttext="\delta(\bm{{}^{\prime}}{x})" display="inline"><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mmultiscripts><mi>x</mi><mprescripts></mprescripts><none></none><mo mathvariant="bold">′</mo></mmultiscripts><mo stretchy="false">)</mo></mrow></mrow></math>
+in the second, they correspond to <span class="ltx_text ltx_font_italic">two force couples</span> which exert an equal and opposite torque
+at point source location <math id="S1.p1.m35" class="ltx_Math" alttext="(0,0,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>. Indeed, the representation usually sketched for such
+system of forces is (Figure <a href="#F1" title="Figure 6.1 ‣ 6.1 The double couple force equivalent ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a>):</p>
+<div class="ltx_block ltx_align_center ltx_framed_rectangle" style="border-color: #000000;padding-top:12pt;padding-bottom:12pt;">
+<object type="image/svg+xml" data="Figures/DoubleCouple.svg" id="S1.p1.g1" class="ltx_graphics" alt=""></object>
+</div>
+</div>
+<figure id="F1" class="ltx_figure ltx_align_center">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 6.1: </span><span class="ltx_text ltx_font_sansserif">
+Double couple representation of the seismic source.
+</span></figcaption>
+</figure>
+<div id="S1.p2" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">It can be shown that this force system is equivalent to the one in Figure <a href="#F2" title="Figure 6.2 ‣ 6.1 The double couple force equivalent ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.2</span></a>.</p>
+<div class="ltx_block ltx_align_center ltx_framed_rectangle" style="border-color: #000000;padding-top:12pt;padding-bottom:12pt;">
+<object type="image/svg+xml" data="Figures/DoubleCoupleEquiv.svg" id="S1.p2.g1" class="ltx_graphics" alt=""></object>
+</div>
+</div>
+<figure id="F2" class="ltx_figure ltx_align_center">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 6.2: </span><span class="ltx_text ltx_font_sansserif">
+Equivalent system of forces to that of Figure <a href="#F1" title="Figure 6.1 ‣ 6.1 The double couple force equivalent ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a>.
+</span></figcaption>
+</figure>
+<div id="S1.p3" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S1.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">6.1.1 </span>Stereonet representation of focal mechanisms</h3>
+
+<div id="S1.SS1.p1" class="ltx_para">
+<p class="ltx_p">According to figure <a href="#F1" title="Figure 6.1 ‣ 6.1 The double couple force equivalent ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a>, the system of forces corresponding to a double couple
+will radiate a P-wave which is either dilational (tension) or compressive
+depending on the quadrant of the (x,z) plane. As a consequence, looking at the sign of the
+first arrival at a number of stations distributed in various locations around the earthquake source,
+one can deduce the type of focal mechanism.
+For a better representation of the focal mechanism in the 3D context of a spherical Earth,
+the relative position of each seismic station relative to the earthquake source can be
+identified on a <span class="ltx_text ltx_font_italic">stereonet</span> projection.
+The stereonet is the graphic representation of an imaginary half-sphere located below the earthquake source.
+An equivalent, symmetric half-sphere can be represented also under each seismic station.
+Depending on the station/earthquake unique relative position, the
+ray will pierce the focal sphere at a unique point, also called a POLE.
+This can be seen in figure (<a href="#F3" title="Figure 6.3 ‣ 6.1.1 Stereonet representation of focal mechanisms ‣ 6.1 The double couple force equivalent ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.3</span></a>). Seen from above (map view), the
+stereonet will look like a circle with different points indicating the poles or points
+of intersection.
+
+</p>
+<div class="ltx_block ltx_align_center ltx_framed_rectangle" style="border-color: #000000;padding-top:12pt;padding-bottom:12pt;">
+<object type="image/svg+xml" data="Figures/fomec_symmetry_stereonet.svg" id="S1.SS1.p1.g1" class="ltx_graphics" alt=""></object>
+</div>
+</div>
+<figure id="F3" class="ltx_figure ltx_align_center">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 6.3: </span><span class="ltx_text ltx_font_sansserif">(a) Illustration of the focal semi-sphere (in a 2D section). The earthquake source is located at Q.
+A unique ray for the P-wave, first arrival will pierce the semi-sphere in a unique point for
+a given station. Here two example stations are <math id="F3.m7" class="ltx_Math" alttext="S_{1}" display="inline"><msub><mi mathvariant="normal">S</mi><mn mathvariant="normal">1</mn></msub></math> and <math id="F3.m8" class="ltx_Math" alttext="S_{2}" display="inline"><msub><mi mathvariant="normal">S</mi><mn mathvariant="normal">2</mn></msub></math>. The take-off angle <math id="F3.m9" class="ltx_Math" alttext="\theta" display="inline"><mi mathvariant="normal">θ</mi></math>
+at the earthquake location is the same as the emerging angle <math id="F3.m10" class="ltx_Math" alttext="\theta" display="inline"><mi mathvariant="normal">θ</mi></math> at the station. The closer the
+station is to the earthquake, the larger is <math id="F3.m11" class="ltx_Math" alttext="\theta" display="inline"><mi mathvariant="normal">θ</mi></math> up to a maximum of <math id="F3.m12" class="ltx_Math" alttext="90^{o}" display="inline"><msup><mn mathvariant="normal">90</mn><mi mathvariant="normal">o</mi></msup></math> for the nearest stations.
+Different take-off angles, and the corresponding epicentral distances,
+are indicated in the table of exercise <a href="#exnum31" title="Exercise 6.31. ‣ Exercises ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">31</span></a>.
+(b) The stereonet is the view “from above” or map view, of the focal semi-sphere, as illustrated here
+assuming that the station lies to the east of the earthquake.</span></figcaption>
+</figure>
+<div id="S1.SS1.p2" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">When a number of stations at different locations are available, the first arrivals allow to map
+on the stereonet the quadrants where the first motion indicates a compressive or a tensile impulse.
+As a result, the mechanism of the earthquake can be determined, as illustrated in figure (<a href="#F5" title="Figure 6.5 ‣ 6.1.1 Stereonet representation of focal mechanisms ‣ 6.1 The double couple force equivalent ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.5</span></a>).</p>
+<div class="ltx_block ltx_align_center ltx_framed_rectangle" style="border-color: #000000;padding-top:12pt;padding-bottom:12pt;">
+<img src="Figures/Q1Solved3D.png" id="S1.SS1.p2.g1" class="ltx_graphics" width="390" height="275" alt="">
+</div>
+</div>
+<figure id="F4" class="ltx_figure ltx_align_center">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 6.4: </span><span class="ltx_text ltx_font_sansserif">Visulisation of the focal hemisphere and its projection.
+A number of poles are shown, with the corresponding rays. Two fault planes are shown, and their
+intersection with the semisphere. The poles appear as dots. The fault plane intersections
+appear as arcs of a circle on the map view. </span></figcaption>
+</figure>
+<div id="S1.SS1.p3" class="ltx_para">
+<br class="ltx_break"><span class="ltx_inline-para ltx_minipage ltx_align_middle" style="width:433.6pt;">
+<span id="S1.SS1.p3.p1" class="ltx_para ltx_minipage ltx_align_middle" style="width:216.8pt;"><img src="Figures/Reykjanes.png" id="S1.SS1.p3.p1.g1" class="ltx_graphics" width="178" height="178" alt="">
+</span>
+<span id="S1.SS1.p3.p2" class="ltx_para ltx_minipage ltx_align_middle" style="width:216.8pt;">
+<span class="ltx_p">PURE STRIKE-SLIP
+<br class="ltx_break">Date-Time (UTC): 2015-02-13 18:59:12
+<br class="ltx_break">Location: REYKJANES RIDGE
+<br class="ltx_break">Latitude, Longitude: 52.700<math id="S1.SS1.p3.p2.m1" class="ltx_Math" alttext="{}^{o}" display="inline"><msup><mi></mi><mi>o</mi></msup></math>, -32.7400<math id="S1.SS1.p3.p2.m2" class="ltx_Math" alttext="{}^{o}" display="inline"><msup><mi></mi><mi>o</mi></msup></math>
+<br class="ltx_break">Magnitude: 7.1 MW (Global CMT Project)
+<br class="ltx_break">Depth: 25.17 km
+<br class="ltx_break">Author: Global CMT Project
+<br class="ltx_break">Catalog, Contributor: GCMT, GCMT
+<br class="ltx_break"></span>
+</span></span><span class="ltx_inline-para ltx_minipage ltx_align_middle" style="width:433.6pt;">
+<span id="S1.SS1.p3.p3" class="ltx_para ltx_minipage ltx_align_middle" style="width:216.8pt;"><img src="Figures/Chile.png" id="S1.SS1.p3.p3.g1" class="ltx_graphics" width="178" height="178" alt="">
+</span>
+<span id="S1.SS1.p3.p4" class="ltx_para ltx_minipage ltx_align_middle" style="width:216.8pt;">
+<span class="ltx_p">MOSTLY DIP-SLIP (THRUST)
+<br class="ltx_break">with some strike-slip
+<br class="ltx_break">Date-Time (UTC): 2014-04-03 02:43:13
+<br class="ltx_break">Location: NEAR COAST OF NORTHERN CHILE
+<br class="ltx_break">Latitude, Longitude: -20.571<math id="S1.SS1.p3.p4.m1" class="ltx_Math" alttext="{}^{o}" display="inline"><msup><mi></mi><mi>o</mi></msup></math>, -70.493<math id="S1.SS1.p3.p4.m2" class="ltx_Math" alttext="{}^{o}" display="inline"><msup><mi></mi><mi>o</mi></msup></math>
+<br class="ltx_break">Magnitude: 7.7 mww (us)
+<br class="ltx_break">Depth: 22.4 km
+<br class="ltx_break">Author: us
+<br class="ltx_break">Catalog, Contributor: NEIC PDE, us
+<br class="ltx_break"></span>
+</span></span><span class="ltx_inline-para ltx_minipage ltx_align_middle" style="width:433.6pt;">
+<span id="S1.SS1.p3.p5" class="ltx_para ltx_minipage ltx_align_middle" style="width:216.8pt;"><img src="Figures/Italy.png" id="S1.SS1.p3.p5.g1" class="ltx_graphics" width="178" height="178" alt="">
+</span>
+<span id="S1.SS1.p3.p6" class="ltx_para ltx_minipage ltx_align_middle" style="width:216.8pt;">
+<span class="ltx_p">PURE DIP-SLIP (NORMAL)
+<br class="ltx_break">Date-Time (UTC): 2016-10-30 06:40:19
+<br class="ltx_break">Location: CENTRAL ITALY
+<br class="ltx_break">Latitude, Longitude: 42.855 °, 13.088 °
+<br class="ltx_break">Magnitude: 6.6 mww (us)
+<br class="ltx_break">Depth: 10.0 km
+<br class="ltx_break">Author: us,gcmt
+<br class="ltx_break">Catalog, Contributor: NEIC PDE, us
+<br class="ltx_break"></span>
+</span></span>
+</div>
+<figure id="F5" class="ltx_figure">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 6.5: </span>
+The above "beach-ball" diagrams illustrate various types of faulting. (Focal mechanism diagrams
+downloaded from <a href="https://ds.iris.edu/wilber3" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://ds.iris.edu/wilber3</a>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="Sx1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Exercises</h2>
+
+<div id="Sx1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_rule" style="width:433.6pt;height:0.4pt;background:black;display:inline-block;"> </span></p>
+</div>
+<div id="exnum29" class="ltx_theorem ltx_theorem_exnew">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">Exercise 6.29.</h6>
+<div id="exnum29.p1" class="ltx_para">
+<p class="ltx_p">–Plot poles and find mechanism
+The following stations have recorded either tensile (NEGATIVE) or compressive (POSITIVE) first arrivals
+from an earthquake:
+Q1-1971
+<br class="ltx_break">NEGATIVE:
+<br class="ltx_break">16, 28
+<br class="ltx_break">93, 14
+<br class="ltx_break">356, 54
+<br class="ltx_break">POSITIVE:
+<br class="ltx_break">12, 72
+<br class="ltx_break">349, 54
+<br class="ltx_break">54, 71
+<br class="ltx_break">107, 43
+<br class="ltx_break">128, 9
+<br class="ltx_break">302, 26
+<br class="ltx_break">259, 49
+<br class="ltx_break">201, 56
+<br class="ltx_break">181, 50
+<br class="ltx_break">300, 58
+<br class="ltx_break">144, 56
+<br class="ltx_break">180, 89
+<br class="ltx_break">
+The first line indicates the year of the earthquake.
+The first column indicate the TREND, and the second line indicates the PLUNGE of the
+back-propagated ray.
+Following the instructions on the lecture video, resolve graphically the fault plane
+and the auxiliary plane.
+Usually we use a transparency and printed paper with a pin for this exercises.
+This year we will be using an online app to solve the same exercise while learning online.
+For this, you can use the app at the following site:
+<a href="https://app.visiblegeology.com/stereonetApp.html" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://app.visiblegeology.com/stereonetApp.html</a>.
+and paste the TREND and PLUNGE values of the earthquake for all stations.
+What is the indicative strike and dip of the fault plane and auxiliary plane?
+What is the focal mechanism?
+Follow the same procedure for the following earthquakes:
+Q2-1976
+<br class="ltx_break">NEGATIVE
+<br class="ltx_break">60 69
+<br class="ltx_break">56 67
+<br class="ltx_break">52 65
+<br class="ltx_break">52 71
+<br class="ltx_break">48 68
+<br class="ltx_break">230 52
+<br class="ltx_break">POSITIVE
+<br class="ltx_break">34 72
+<br class="ltx_break">39 68
+<br class="ltx_break">132 66
+<br class="ltx_break">207 67
+<br class="ltx_break">224 60
+<br class="ltx_break">238 48
+<br class="ltx_break">214 53
+<br class="ltx_break">242 50
+<br class="ltx_break">252 56
+<br class="ltx_break">266 56
+<br class="ltx_break">277 60
+<br class="ltx_break">282 59
+<br class="ltx_break">285 61
+<br class="ltx_break">11 63
+<br class="ltx_break">356 64
+<br class="ltx_break">339 60
+<br class="ltx_break">333 63
+<br class="ltx_break">334 66
+<br class="ltx_break">304 65
+<br class="ltx_break">——————–
+<br class="ltx_break">Q3-1979
+<br class="ltx_break">NEGATIVE
+<br class="ltx_break">28.6 49
+<br class="ltx_break">25.9 74.9
+<br class="ltx_break">46.1 75.6
+<br class="ltx_break">263.4 75.2
+<br class="ltx_break">257.8 61.2
+<br class="ltx_break">209.6 62.2
+<br class="ltx_break">POSITIVE
+<br class="ltx_break">306.5 45.6
+<br class="ltx_break">317 59.3
+<br class="ltx_break">314.7 63
+<br class="ltx_break">330.6 62.5
+<br class="ltx_break">345.9 64.4
+<br class="ltx_break">351.7 63.7
+<br class="ltx_break">2.9 63.8
+<br class="ltx_break">348.2 76.1
+<br class="ltx_break">110.8 69.8
+<br class="ltx_break">106.5 60.4
+<br class="ltx_break">122.7 44.5
+<br class="ltx_break">152.9 55.2
+<br class="ltx_break">158.4 62.6
+<br class="ltx_break">299.5 70
+<br class="ltx_break">303.9 72.7
+<br class="ltx_break">298 63.7
+<br class="ltx_break">303.3 65.5
+<br class="ltx_break">————————
+<br class="ltx_break">Q4-1978
+<br class="ltx_break">NEGATIVE
+<br class="ltx_break">55.3 61.5
+<br class="ltx_break">56.8 59.3
+<br class="ltx_break">59.6 58.9
+<br class="ltx_break">65.3 61.3
+<br class="ltx_break">62 66
+<br class="ltx_break">100.3 54.7
+<br class="ltx_break">137 60.4
+<br class="ltx_break">158.1 67.8
+<br class="ltx_break">165.3 57
+<br class="ltx_break">174.9 54.6
+<br class="ltx_break">181.2 55.8
+<br class="ltx_break">186.6 49.6
+<br class="ltx_break">186 67
+<br class="ltx_break">176.1 65.6
+<br class="ltx_break">POSITIVE
+<br class="ltx_break">60 69
+<br class="ltx_break">56 67
+<br class="ltx_break">52 65
+<br class="ltx_break">52 71
+<br class="ltx_break">48 68
+<br class="ltx_break">34 72
+<br class="ltx_break">39 68
+<br class="ltx_break">132 66
+<br class="ltx_break">207 67
+<br class="ltx_break">224 60
+<br class="ltx_break">238 48
+<br class="ltx_break">214 53
+<br class="ltx_break">242 50
+<br class="ltx_break">252 56
+<br class="ltx_break">266 56
+<br class="ltx_break">277 60
+<br class="ltx_break">282 59
+<br class="ltx_break">285 61
+<br class="ltx_break">11 63
+<br class="ltx_break">356 64
+<br class="ltx_break">339 60
+<br class="ltx_break">333 63
+<br class="ltx_break">334 66
+<br class="ltx_break">304 65
+<br class="ltx_break">230 52
+<br class="ltx_break"></p>
+</div>
+</div>
+<div id="Sx1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_rule" style="width:433.6pt;height:0.4pt;background:black;display:inline-block;"> </span></p>
+</div>
+<div id="exnum30" class="ltx_theorem ltx_theorem_exnew">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">Exercise 6.30.</h6>
+<div id="exnum30.p1" class="ltx_para">
+<p class="ltx_p">In the far field, the P-wave radiation results in a radial component of displacement <math id="exnum30.p1.m1" class="ltx_Math" alttext="u_{r}" display="inline"><msub><mi>u</mi><mi>r</mi></msub></math>
+the following amplitude as a function of the azimut:</p>
+<table id="Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex1.m1" class="ltx_Math" alttext="u_{r}=\frac{1}{4\pi\rho\ V_{P}^{2}\ r}\dot{M}_{o}(t-r/V_{P})\ \sin{2\theta}\ %
+\cos{\phi}" display="block"><mrow><msub><mi>u</mi><mi>r</mi></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mpadded width="+5pt"><mi>ρ</mi></mpadded><mo>⁢</mo><mpadded width="+5pt"><msubsup><mi>V</mi><mi>P</mi><mn>2</mn></msubsup></mpadded><mo>⁢</mo><mi>r</mi></mrow></mfrac><mo>⁢</mo><msub><mover accent="true"><mi>M</mi><mo>˙</mo></mover><mi>o</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>-</mo><mrow><mi>r</mi><mo>/</mo><msub><mi>V</mi><mi>P</mi></msub></mrow></mrow><mo rspace="7.5pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mpadded width="+5pt"><mi>θ</mi></mpadded></mrow></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="exnum30.p1.m2" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> is the distance from the source, <math id="exnum30.p1.m3" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> and <math id="exnum30.p1.m4" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> are the angles
+with respect to the slip plane as indicated below</p>
+<object type="image/svg+xml" data="Figures/ThetaPhi.svg" id="exnum30.p1.g1" class="ltx_graphics ltx_centering" alt=""></object>
+<p class="ltx_p">Taking <math id="exnum30.p1.m5" class="ltx_Math" alttext="\frac{1}{4\pi\rho\ V_{P}^{2}\ r}\dot{M}_{o}(t-r/V_{P})\ =\textrm{Const.}=1" display="inline"><mrow><mrow><mfrac><mn>1</mn><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mpadded width="+5pt"><mi>ρ</mi></mpadded><mo>⁢</mo><mpadded width="+5pt"><msubsup><mi>V</mi><mi>P</mi><mn>2</mn></msubsup></mpadded><mo>⁢</mo><mi>r</mi></mrow></mfrac><mo>⁢</mo><msub><mover accent="true"><mi>M</mi><mo>˙</mo></mover><mi>o</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>-</mo><mrow><mi>r</mi><mo>/</mo><msub><mi>V</mi><mi>P</mi></msub></mrow></mrow><mo rspace="7.5pt" stretchy="false">)</mo></mrow></mrow><mo>=</mo><mtext>Const.</mtext><mo>=</mo><mn>1</mn></mrow></math>
+and <math id="exnum30.p1.m6" class="ltx_Math" alttext="\phi=0" display="inline"><mrow><mi>ϕ</mi><mo>=</mo><mn>0</mn></mrow></math>,
+find a parametric representation of the amplitude of <math id="exnum30.p1.m7" class="ltx_Math" alttext="u_{r}" display="inline"><msub><mi>u</mi><mi>r</mi></msub></math> as a function of the
+angle <math id="exnum30.p1.m8" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>. You can use <span class="ltx_text ltx_font_italic">wolframalpha</span> in your browser with the ParametricPlot function
+to represent it.</p>
+</div>
+</div>
+<div id="Sx1.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_rule" style="width:433.6pt;height:0.4pt;background:black;display:inline-block;"> </span></p>
+</div>
+<div id="exnum31" class="ltx_theorem ltx_theorem_exnew">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">Exercise 6.31.</h6>
+<div id="exnum31.p1" class="ltx_para">
+<p class="ltx_p">Reconstruct the focal mechanism of the Tohoku, 2011 Mw 9.1 earthquake.
+You will use the following material, and connect to the the site
+<a href="https://app.visiblegeology.com/stereonetApp.html" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://app.visiblegeology.com/stereonetApp.html</a>.
+This is the same app as used for exercise 1. As noted above, a video in the lecture material
+explains how to use the app.
+<span class="ltx_inline-para ltx_minipage ltx_align_middle" style="width:433.6pt;">
+<span id="exnum31.p1.p1" class="ltx_para ltx_minipage ltx_align_middle" style="width:216.8pt;"><span class="ltx_ERROR undefined">\csvautotabular</span>
+<span class="ltx_p">toff.csv</span>
+</span>
+<span id="exnum31.p1.p2" class="ltx_para ltx_minipage ltx_align_middle" style="width:216.8pt;"><img src="Figures/P-WaveShadow.png" id="exnum31.p1.p2.g1" class="ltx_graphics" width="541" height="726" alt="">
+</span></span>
+<span class="ltx_ERROR undefined">\csvautotabular</span>backaz.csv
+<object type="image/svg+xml" data="Figures/RecSecPlusA.svg" id="exnum31.p1.g1" class="ltx_graphics" alt=""></object>
+</p>
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="Sx2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Answers to exercises</h2>
+
+<div id="Sx2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_rule" style="width:433.6pt;height:0.4pt;background:black;display:inline-block;"> </span>
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Answer to Exercise 6.<a href="#exnum29" title="Exercise 6.29. ‣ Exercises ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29</span></a></span>
+ –focal mechanisms from list of stations for 4 quakes
+<span class="ltx_text ltx_ulem_uline">1. solution on “paper":</span>
+Let’s go through the following example step by step.</p>
+<object type="image/svg+xml" data="Figures/FomeStep1.svg" id="Sx2.p1.g1" class="ltx_graphics ltx_centering" alt=""></object>
+<p class="ltx_p">First identify a possible plane and use the corresponding meridian to
+highlight it, and note the position of its pole:</p>
+<object type="image/svg+xml" data="Figures/FomeStep2.svg" id="Sx2.p1.g2" class="ltx_graphics ltx_centering" alt=""></object>
+<p class="ltx_p">Then rotate again the transparency until a second plane is identified, crossing through the pole, and highlight the corresponding meridian:</p>
+<object type="image/svg+xml" data="Figures/FomeStep3.svg" id="Sx2.p1.g3" class="ltx_graphics ltx_centering" alt=""></object>
+<p class="ltx_p">Finally, the resulting mechanism is</p>
+<object type="image/svg+xml" data="Figures/FomeStep4.svg" id="Sx2.p1.g4" class="ltx_graphics ltx_centering" alt=""></object>
+<p class="ltx_p"><span class="ltx_text ltx_ulem_uline">2. solution using online app:</span>
+This is what the online stereonet reveals for Q1 and Q2 if the station’s back-azimut and take-off angles are give correctly:</p>
+<img src="Figures/Q1Solved.png" id="Sx2.p1.g5" class="ltx_graphics ltx_centering" width="432" height="305" alt=""><img src="Figures/Q2Solved.png" id="Sx2.p1.g6" class="ltx_graphics ltx_centering" width="432" height="305" alt="">
+<p class="ltx_p">The corresponding solutions for the fault/auxiliary plane are:
+Q1:
+<br class="ltx_break">strk dip lambda type
+<br class="ltx_break">310, 65, 90, thrust
+<br class="ltx_break">130, 25, 90, thrust
+<br class="ltx_break">
+<br class="ltx_break">Q2:
+<br class="ltx_break">176, 80, 195, strike-slip RL
+<br class="ltx_break">83, 5, 350, strike slip LL
+<br class="ltx_break">
+<br class="ltx_break">Q3:
+<br class="ltx_break">9, 90, 180, SS RL
+<br class="ltx_break">99, 90, 0, SS LL
+<br class="ltx_break">
+<br class="ltx_break">Q4:
+<br class="ltx_break">This case has no solution leaving the stations completely separated.
+<br class="ltx_break">16, 85, 90, dip slip
+<br class="ltx_break">195, 5, 90, thrust
+<br class="ltx_break">In this case, there is an alternative solution too
+<br class="ltx_break">78, 66, 25, SS LL
+<br class="ltx_break">337, 67, 154, SS RL
+<br class="ltx_break">
+
+
+ <span class="ltx_rule" style="width:433.6pt;height:0.4pt;background:black;display:inline-block;"> </span>
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Answer to Exercise 6.<a href="#exnum30" title="Exercise 6.30. ‣ Exercises ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30</span></a></span></p>
+<object type="image/svg+xml" data="Figures/SolRapa.svg" id="Sx2.p1.g7" class="ltx_graphics ltx_centering" alt=""></object>
+<p class="ltx_p">As indicated in the figure, if the ray path at an angle <math id="Sx2.p1.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>
+from the fault normal direction <math id="Sx2.p1.m2" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math>, any point on the ray path will
+verify <math id="Sx2.p1.m3" class="ltx_Math" alttext="\frac{x}{z}=\tan{\theta}" display="inline"><mrow><mfrac><mi>x</mi><mi>z</mi></mfrac><mo>=</mo><mrow><mi>tan</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></math>. The relative amplitude
+of the P-wave in that direction is <math id="Sx2.p1.m4" class="ltx_Math" alttext="\ell=\sin 2\theta" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow></math>, therefore
+a parameteric representation can be obtained using:</p>
+<table id="Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex2.m1" class="ltx_Math" alttext="\begin{array}[]{ll}x_{A}=\sin\theta\ \sin 2\theta\\
+z_{A}=\cos\theta\ \sin 2\theta\end{array}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><msub><mi>x</mi><mi>A</mi></msub><mo>=</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><mpadded width="+5pt"><mi>θ</mi></mpadded></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><msub><mi>z</mi><mi>A</mi></msub><mo>=</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mpadded width="+5pt"><mi>θ</mi></mpadded></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mtd><mtd></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and representing the loci of <math id="Sx2.p1.m5" class="ltx_Math" alttext="(x_{A},z_{A})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>A</mi></msub><mo>,</mo><msub><mi>z</mi><mi>A</mi></msub><mo stretchy="false">)</mo></mrow></math> when <math id="Sx2.p1.m6" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> varies from 0 to <math id="Sx2.p1.m7" class="ltx_Math" alttext="2\\
+pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>i</mi></mrow></math>.
+Using <span class="ltx_text ltx_font_italic">wolframalpha</span> we otain:</p>
+<img src="Figures/wolframalpha1.png" id="Sx2.p1.g8" class="ltx_graphics ltx_centering" width="213" height="261" alt="">
+<p class="ltx_p">Furthermore, note that the direction of the first impulse is in the ray direction,
+toward the stations for quadrants <math id="Sx2.p1.m8" class="ltx_Math" alttext="0&lt;\theta&lt;90^{o}" display="inline"><mrow><mn>0</mn><mo>&lt;</mo><mi>θ</mi><mo>&lt;</mo><msup><mn>90</mn><mi>o</mi></msup></mrow></math> and <math id="Sx2.p1.m9" class="ltx_Math" alttext="180^{o}&lt;\theta&lt;270^{o}" display="inline"><mrow><msup><mn>180</mn><mi>o</mi></msup><mo>&lt;</mo><mi>θ</mi><mo>&lt;</mo><msup><mn>270</mn><mi>o</mi></msup></mrow></math> (red lobes),
+and toward the source (clear lobes) for <math id="Sx2.p1.m10" class="ltx_Math" alttext="90&lt;\theta&lt;180^{o}" display="inline"><mrow><mn>90</mn><mo>&lt;</mo><mi>θ</mi><mo>&lt;</mo><msup><mn>180</mn><mi>o</mi></msup></mrow></math> and <math id="Sx2.p1.m11" class="ltx_Math" alttext="270^{o}&lt;\theta&lt;360^{o}" display="inline"><mrow><msup><mn>270</mn><mi>o</mi></msup><mo>&lt;</mo><mi>θ</mi><mo>&lt;</mo><msup><mn>360</mn><mi>o</mi></msup></mrow></math>:</p>
+<object type="image/svg+xml" data="Figures/wolframalpha2.svg" id="Sx2.p1.g9" class="ltx_graphics ltx_centering" alt=""></object>
+<p class="ltx_p"><span class="ltx_rule" style="width:433.6pt;height:0.4pt;background:black;display:inline-block;"> </span>
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Answer to Exercise 6.<a href="#exnum31" title="Exercise 6.31. ‣ Exercises ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">31</span></a></span>
+ 
+First let’s detail the positioning of a single station on the focal sphere. Take the example of station <span class="ltx_text ltx_font_bold">KWAJ</span>:</p>
+<ul id="Sx2.I1" class="ltx_itemize">
+<li id="Sx2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Sx2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">From the table of stations, its back-azimut is <math id="Sx2.I1.i1.p1.m1" class="ltx_Math" alttext="316^{o}" display="inline"><msup><mn>316</mn><mi>o</mi></msup></math> and the epicentral distance is <math id="Sx2.I1.i1.p1.m2" class="ltx_Math" alttext="37^{o}" display="inline"><msup><mn>37</mn><mi>o</mi></msup></math>.</p>
+</div>
+</li>
+<li id="Sx2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Sx2.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">From the table of take-off angles, a distance <math id="Sx2.I1.i2.p1.m1" class="ltx_Math" alttext="37^{o}" display="inline"><msup><mn>37</mn><mi>o</mi></msup></math> corresponds to a take-off angle of <math id="Sx2.I1.i2.p1.m2" class="ltx_Math" alttext="27^{o}" display="inline"><msup><mn>27</mn><mi>o</mi></msup></math>.</p>
+</div>
+</li>
+<li id="Sx2.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Sx2.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">From the waveform figure the first <span class="ltx_text ltx_font_italic">vertical</span> motion appears to be negative.</p>
+<ul id="Sx2.I1.I1" class="ltx_itemize">
+<li id="Sx2.I1.i3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="Sx2.I1.i3.i1.p1" class="ltx_para">
+<p class="ltx_p">Because vertical is positive down, a negative means that the ground motion is UP.</p>
+</div>
+</li>
+<li id="Sx2.I1.i3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="Sx2.I1.i3.i2.p1" class="ltx_para">
+<p class="ltx_p">Projection of UP motion onto the upwards ray path at the station results in a positive motion in the ray direction. Therefore KIP is in the compressive quadrant.</p>
+</div>
+</li>
+<li id="Sx2.I1.i3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="Sx2.I1.i3.i3.p1" class="ltx_para">
+<p class="ltx_p">Similarly, all stations having a negative vertical initial motion correspond to UP motion (compressive quadrant), and all those which have a poitive one correspond to DOWN (tensile quadrant).</p>
+</div>
+</li>
+<li id="Sx2.I1.i3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="Sx2.I1.i3.i4.p1" class="ltx_para">
+<p class="ltx_p">Often times the three components of motion at the station are available. They can be rotated and projected onto the raypath before plotting the waveform. In those cases, a positive first motion would indicate that the station is in the compressive quadrant –just the opposite as in our case, where we plot the vertical component alone!</p>
+</div>
+</li>
+<li id="Sx2.I1.i3.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="Sx2.I1.i3.i5.p1" class="ltx_para">
+<p class="ltx_p">To put it as Anders Sandberg, of Oxford’s Future of Humanity Institute "If your job can be easily explained, it can be automated". Don’t have a robot steal your job!</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="Sx2.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Sx2.I1.i4.p1" class="ltx_para">
+<p class="ltx_p">To sum up, for station <span class="ltx_text ltx_font_bold">KWAJ</span> we need only these 3 pieces of information:
+back-azimuth=<math id="Sx2.I1.i4.p1.m1" class="ltx_Math" alttext="316^{o}" display="inline"><msup><mn>316</mn><mi>o</mi></msup></math>; take-off=<math id="Sx2.I1.i4.p1.m2" class="ltx_Math" alttext="27^{o}" display="inline"><msup><mn>27</mn><mi>o</mi></msup></math>; quadrant=compressive. We are now ready to plot <span class="ltx_text ltx_font_bold">KWAJ</span> onto the stereonet, in two simple steps:</p>
+</div>
+</li>
+</ul>
+<object type="image/svg+xml" data="Figures/StereonetKWAJ1.svg" id="Sx2.p1.g10" class="ltx_graphics ltx_centering" alt=""></object><object type="image/svg+xml" data="Figures/StereonetKWAJ2.svg" id="Sx2.p1.g11" class="ltx_graphics ltx_centering" alt=""></object>
+<p class="ltx_p">Step 1 (Left sketch):
+Mark the North on the transparency. Locate the back-azimuth on the transparency, by counting anti-clockwise from the North mark.
+Step 2 (Right sketch):
+Rotate the transparency until the back-azimuth mark is on the
+equator line. At this point, count the take-off angle from the center of the stereonet (in this case, 27), and plot there the bullet corresponding to
+the station (in this case compressive = full bullet).
+After doing this for all stations, find the two orthogonal planes that separate the full bullets from the empty bullets.
+Rotate the transparency until you identify one meridian which separates
+compressive from tensile stations, draw the corresponding plane along the meridian, and its pole at <math id="Sx2.p1.m12" class="ltx_Math" alttext="90^{o}" display="inline"><msup><mn>90</mn><mi>o</mi></msup></math>. Then check whether any second plane exists passing through the first pole, which also separates the stations:</p>
+<object type="image/svg+xml" data="Figures/Foc0.svg" id="Sx2.p1.g12" class="ltx_graphics ltx_centering" alt=""></object>
+<p class="ltx_p">(Note that if the fault has a strike component –not the case for this example– then no single plane will separate all
+the stations. You’ll obtain a fault plane and auxiliary plane which
+cross each other, separating the stations in two compressive and two tensile quadrants, as in the "PURE STRIKE SLIP" example of Exercise 6.<a href="#exnum29" title="Exercise 6.29. ‣ Exercises ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29</span></a>).
+Remember that each plane should pass through the pole of the other plane. The pole is located counting 90 on the equator line, when the plane sits on its meridian.
+Finally, you would obtain the following representation:</p>
+<object type="image/svg+xml" data="Figures/FocMecTohokuCraft.svg" id="Sx2.p1.g13" class="ltx_graphics ltx_centering" alt=""></object>
+</div>
+<div id="Sx2.p2" class="ltx_para ltx_minipage ltx_align_center ltx_align_middle" style="width:216.8pt;">
+<p class="ltx_p">"Tohoku" earthquake
+<br class="ltx_break">Date-Time (UTC): 2011-03-11 05:47:32
+<br class="ltx_break">Location: OFF EAST COAST OF HONSHU, JAPAN
+<br class="ltx_break">Latitude, Longitude: 37.520, 143.050
+<br class="ltx_break">Magnitude: 9.1 MW
+<br class="ltx_break">Depth: 20.0 km
+<br class="ltx_break">Author: Global CMT Project
+<br class="ltx_break">Catalog, Contributor: GCMT, GCMT
+<br class="ltx_break"></p>
+</div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="Ch5.html" title="Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Faulting, fluids, sliding friction</span></a><a href="bib.html" title="Bibliography ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="Ch7.html" title="Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Magnitude and energy</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Thu Jan 20 22:14:13 2022 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
