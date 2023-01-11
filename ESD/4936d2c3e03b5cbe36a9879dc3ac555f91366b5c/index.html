@@ -1,7 +1,176 @@
-<html>
-<i>There are two many rules
-<br>
-  1)
-  <br>
-  3)
+<!DOCTYPE html><html>
+<head>
+<title>Seismology notes - ESD/GEOL3151</title>
+<!--Generated on Mon Jan  9 21:25:35 2023 by LaTeXML (version 0.8.4) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="ltx-ulem.css" type="text/css">
+<link rel="stylesheet" href="ltx-listings.css" type="text/css">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+<link rel="next" href="Ch1.html" title="Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Elasticity ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Pores, cracks and stress concentrations ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Rupture of faults and cracks ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Ch8.html" title="Chapter 8 Waves: in theory and in the Earth ‣ Seismology notes - ESD/GEOL3151">
+<link rel="chapter" href="Chx1.html" title="Appendix ‣ Seismology notes - ESD/GEOL3151">
+<link rel="bibliography" href="bib.html" title="Bibliography ‣ Seismology notes - ESD/GEOL3151">
+</head>
+<body>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Ch1.html" title="Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Stress and strain</span></a>
+</div></header>
+<div class="ltx_page_content">
+<article class="ltx_document">
+<h1 class="ltx_title ltx_title_document">Seismology notes - ESD/GEOL3151</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">S. Nielsen
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p"></p>
+</div>
+<div id="p2" class="ltx_para ltx_align_center">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:144%;">Earth Structure and Dynamics, part II</span></p>
+</div>
+<div id="p3" class="ltx_para ltx_align_center">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:144%;">Notes on Earthquake Seismology</span></p>
+</div>
+<div id="p4" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">This second part of the module will focus on the aspects of earthquake seismology
+in the dynamic Earth.
+We will start by the mechanical aspects which allow to describe the state
+of stress, and how it relates to deformation of elastic solids.
+Then we’ll look at how stress induces failure, and how tectonic slip on faults
+occurs during earthquakes.
+We will define how earthquakes can be measured through the use of magnitude scales,
+seismic moment, and how these relate to the energy released by seismic sources.
+Finally, earthquakes radiate elastic waves which propagate at
+either short or long distances in the Earth. We will learn the
+mathematical representation of waves in solids,
+and how seismic waves can be used to infer the structure
+of the global Earth.</p>
+</div>
+<div id="p5" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p ltx_align_right">S. Nielsen, Durham, January 2021.</p>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+<div class="ltx_TOC ltx_list_toc ltx_toc_toc">
+<h6>Contents</h6>
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch1.html" title="Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Stress and strain</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.html#S1" title="1.1 Body and surface forces on a solid ‣ Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1 </span>Body and surface forces on a solid</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.html#S2" title="1.2 A new surface, a new traction ‣ Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>A new surface, a new traction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.html#S3" title="1.3 The stress tensor ‣ Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3 </span>The stress tensor</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.html#S4" title="1.4 Scalar, vector, tensor ‣ Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>Scalar, vector, tensor</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.html#S5" title="1.5 Properites of the stress tensor ‣ Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.5 </span>Properites of the stress tensor</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.html#S6" title="1.6 Stress rotation ‣ Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.6 </span>Stress rotation</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.html#S7" title="1.7 Generalisation to tensor rotation ‣ Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.7 </span>Generalisation to tensor rotation</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.html#S8" title="1.8 The Mohr representation of stress ‣ Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.8 </span>The Mohr representation of stress</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.html#S9" title="1.9 Deformation and strain ‣ Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.9 </span>Deformation and strain</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch2.html" title="Chapter 2 Elasticity ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Elasticity</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.html#S1" title="2.1 Hooke’s law for elongation; Young’s modulus ‣ Chapter 2 Elasticity ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>Hooke’s law for elongation; Young’s modulus</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.html#S2" title="2.2 Poisson effect; Poisson ratio ‣ Chapter 2 Elasticity ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Poisson effect; Poisson ratio</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.html#S3" title="2.3 Uniform compression; bulk modulus ‣ Chapter 2 Elasticity ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Uniform compression; bulk modulus</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.html#S4" title="2.4 Simple shear; shear modulus ‣ Chapter 2 Elasticity ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.4 </span>Simple shear; shear modulus</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.html#S5" title="2.5 Shear and stress deviator ‣ Chapter 2 Elasticity ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.5 </span>Shear and stress deviator</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.html#S6" title="2.6 A note on strain energy ‣ Chapter 2 Elasticity ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.6 </span>A note on strain energy</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch2.html#S7" title="2.7 General isotropic elastic relations ‣ Chapter 2 Elasticity ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.7 </span>General isotropic elastic relations</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch3.html" title="Chapter 3 Pores, cracks and stress concentrations ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Pores, cracks and stress concentrations</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch3.html#S1" title="3.1 Rock features ‣ Chapter 3 Pores, cracks and stress concentrations ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>Rock features</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch3.html#S2" title="3.2 Stress concentration ‣ Chapter 3 Pores, cracks and stress concentrations ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>Stress concentration</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch3.html#S3" title="3.3 Failure ‣ Chapter 3 Pores, cracks and stress concentrations ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>Failure</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch3.html#S4" title="3.4 Exercises ‣ Chapter 3 Pores, cracks and stress concentrations ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>Exercises</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch4.html" title="Chapter 4 Rupture of faults and cracks ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Rupture of faults and cracks</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch4.html#S1" title="4.1 From elliptical cracks to faults ‣ Chapter 4 Rupture of faults and cracks ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1 </span>From elliptical cracks to faults</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch4.html#S2" title="4.2 Fracture energy ‣ Chapter 4 Rupture of faults and cracks ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.2 </span>Fracture energy</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch4.html#S3" title="4.3 Exercises ‣ Chapter 4 Rupture of faults and cracks ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.3 </span>Exercises</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch5.html" title="Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Faulting, fluids, sliding friction</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch5.html#S1" title="5.1 Motion Discontinuity: modes I, II, III ‣ Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.1 </span>Motion Discontinuity: modes I, II, III</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch5.html#S2" title="5.2 Fault types ‣ Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.2 </span>Fault types</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch5.html#S3" title="5.3 Friction and Mohr-Coulomb ‣ Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.3 </span>Friction and Mohr-Coulomb</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch5.html#S4" title="5.4 Pore fluid pressure and effective stress ‣ Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.4 </span>Pore fluid pressure and effective stress</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="Ch5.html#S5" title="5.5 Static and sliding friction ‣ Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.5 </span>Static and sliding friction</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="Ch5.html#S5.SS1" title="5.5.1 Slip-weakening friction ‣ 5.5 Static and sliding friction ‣ Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.5.1 </span>Slip-weakening friction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="Ch5.html#S5.SS2" title="5.5.2 Rate-and-state friction ‣ 5.5 Static and sliding friction ‣ Chapter 5 Faulting, fluids, sliding friction ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.5.2 </span>Rate-and-state friction</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch6.html" title="Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Radiation pattern from the earthquake source</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="Ch6.html#S1" title="6.1 The double couple force equivalent ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.1 </span>The double couple force equivalent</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="Ch6.html#S1.SS1" title="6.1.1 Stereonet representation of focal mechanisms ‣ 6.1 The double couple force equivalent ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.1.1 </span>Stereonet representation of focal mechanisms</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="Ch6.html#S1.SS2" title="6.1.2 How to find the takeoff angle, azimuth and back-azimuth ‣ 6.1 The double couple force equivalent ‣ Chapter 6 Radiation pattern from the earthquake source ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.1.2 </span>How to find the takeoff angle, azimuth and back-azimuth</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch7.html" title="Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Magnitude and energy</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch7.html#S1" title="7.1 Moment and strain energy ‣ Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.1 </span>Moment and strain energy</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch7.html#S2" title="7.2 Scaling relations in earthquake rupture ‣ Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.2 </span>Scaling relations in earthquake rupture</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch7.html#S3" title="7.3 Magnitude scales ‣ Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.3 </span>Magnitude scales</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch7.html#S4" title="7.4 Moment magnitude ‣ Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.4 </span>Moment magnitude</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch7.html#S5" title="7.5 Estimating moment and rupture size from data ‣ Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.5 </span>Estimating moment and rupture size from data</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch7.html#S6" title="7.6 Relative frequency of large and small earthquakes: The GR distribution ‣ Chapter 7 Magnitude and energy ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.6 </span>Relative frequency of large and small earthquakes: The GR distribution</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch8.html" title="Chapter 8 Waves: in theory and in the Earth ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Waves: in theory and in the Earth</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch8.html#S1" title="8.1 Basic elastic wave theory ‣ Chapter 8 Waves: in theory and in the Earth ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.1 </span>Basic elastic wave theory</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch8.html#S2" title="8.2 Wavenumber and slowness ‣ Chapter 8 Waves: in theory and in the Earth ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.2 </span>Wavenumber and slowness</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch8.html#S3" title="8.3 Earth structure ‣ Chapter 8 Waves: in theory and in the Earth ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.3 </span>Earth structure</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch8.html#S4" title="8.4 Principal Ray paths in the Earth ‣ Chapter 8 Waves: in theory and in the Earth ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.4 </span>Principal Ray paths in the Earth</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch8.html#S5" title="8.5 Travel time in global Earth ‣ Chapter 8 Waves: in theory and in the Earth ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.5 </span>Travel time in global Earth</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="bib.html" title="Bibliography ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="Ch1.html" title="Chapter 1 Stress and strain ‣ Seismology notes - ESD/GEOL3151" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Stress and strain</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Mon Jan  9 21:25:35 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
 </html>
