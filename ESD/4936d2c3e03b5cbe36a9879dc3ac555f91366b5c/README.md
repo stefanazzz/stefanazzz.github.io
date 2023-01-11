@@ -1,1 +1,0 @@
-Earth Structure and Dynamics
