@@ -1,0 +1,9 @@
+created: 20260123153638407
+modified: 20260123155540374
+tags: $:/tags/Macro private
+title: $:/PublishFilter
+type: text/vnd.tiddlywiki
+
+\define publishFilter()
+-[tag[private]]
+\end

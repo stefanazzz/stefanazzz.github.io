@@ -1,0 +1,23 @@
+bibtype: manual
+created: 20260120175752406
+modified: 20260120180401719
+title: python_tricks
+type: text/vnd.tiddlywiki
+
+```python
+# loop with var and index:
+-------------------------------------
+for i, var in enumerate(array): 
+    do something with i and var
+
+# return data from ipywidget:
+------------------------------------------
+on_button (to be continued....)
+
+# color or bold print:
+----------------------------
+# red: \033[1;31
+# bold: \033[1m
+# retun to normal:  \033[0m
+print("\033[1;31m NO GOOD! \033[0m file not found or wrong format? " )
+print('\033[1m I need a file name ending in .dat or a .res \033[0m')

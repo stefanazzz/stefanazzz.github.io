@@ -1,0 +1,19 @@
+created: 20260120184619085
+modified: 20260121135640112
+tags: 
+title: RML video tutorials
+type: text/vnd.tiddlywiki
+
+TiePie software to acquire laboratory signals (load cell, gages, piezo,...)
+
+Full playlist (note there are several videos, can select from list at top right):
+
+<iframe
+  width="720"
+  height="405"
+  src="https://www.youtube.com/embed?list=PLec0gejL3571-OCSU1yLYFEo1OZ7jWbUy"
+  title="YouTube playlist"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>

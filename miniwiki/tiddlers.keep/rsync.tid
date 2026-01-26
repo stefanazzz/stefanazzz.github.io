@@ -1,0 +1,13 @@
+bibtype: manual
+created: 20260120180819708
+modified: 20260121133846181
+title: rsync
+type: text/vnd.tiddlywiki
+
+
+rsync -aurv ./SourceFolder/ /home/stefan/OneDrive/Papers/TargetFolder/
+
+Trailing \/ on both source and target are importatn to avoid nesting
+
+Possible to add restriction on minumum time difference between source and target files
+

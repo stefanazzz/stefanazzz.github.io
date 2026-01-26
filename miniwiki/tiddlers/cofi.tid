@@ -1,0 +1,11 @@
+bibtype: manual
+created: 20260121122554159
+modified: 20260121122951597
+title: cofi
+type: text/vnd.tiddlywiki
+
+Example of geophysical inversion library cofi (co-authored by Andrew Valentine). 
+https://colab.research.google.com/github/inlab-geo/cofi-examples/blob/main/examples/pygimli_ert/pygimli_ert.ipynb
+
+Here ERT PyGIMLi solver (https://www.pygimli.org/) is used for the forward problem, but   `cofi` solvers for the inverse problem instead of the PyGiMli default.
+

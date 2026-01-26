@@ -1,0 +1,4 @@
+title: $:/config/SaveWikiFilter
+type: text/vnd.tiddlywiki
+
+[all[tiddlers]!is[system]!tag[private]]

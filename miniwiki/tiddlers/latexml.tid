@@ -1,0 +1,52 @@
+authors: 
+bibtype: report
+created: 20260121130621935
+doi: 
+modified: 20260121132017690
+title: latexml
+type: text/vnd.tiddlywiki
+url: 
+year: 2023
+
+Will convert latex book with chapters allowing:
+
+* Structured web page with links to each chapter 
+* Conversion equations to mathjax 
+* Use of vector ghraphs and bitmap in figures 
+* cross-refrencing of equations 
+* bibliography 
+* cross-ref of bib refereneces
+
+folder:
+
+OneDrive/Classes/ESD/Chapters
+<br>  subfolder: Figures/
+
+files:
+
+* ltxml_comile.sh (alsoe reproduced below)
+* Seismology.tex (main file, referencing other fles in same folder)
+
+bash shell:
+
+```python
+#!/bin/bash 
+
+fname=Seismology # name of the input latex file (omit .tex) 
+
+fbib=Seismology_bibliography.bib # name of the input bibtex file database 
+
+#bibliogrpahuc database convert to xml. RUN ONLY ONCE TO CREATE OR UPDATE bibfile.bib in the local folder: 
+
+#latexml --dest=$fbib.xml $fbib 
+
+#create the xml from input tex file ($1 in input is filename WITHOUT .tex) 
+
+latexml --dest $fname.xml $fname 
+
+#post proc and creation of html file(s). In this example the navigation and the output is split at chapter level. 
+
+latexmlpost --format=html5 --javascript='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML' --splitat=chapter -dest=OutputHTML/$fname.html $fname 
+
+##### end
+```

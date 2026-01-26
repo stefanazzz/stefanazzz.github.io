@@ -1,0 +1,11 @@
+created: 20260123173727706
+modified: 20260123173800303
+tags: 
+title: export for static
+type: text/vnd.tiddlywiki
+
+create a tiddler with 
+title: $:/config/Plugins/Disabled/$:/plugins/tiddlywiki/tiddlyweb
+type: text/plain
+content:
+yes

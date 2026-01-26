@@ -1,0 +1,97 @@
+bibtype: manual
+created: 20260121133129418
+modified: 20260121133722312
+title: RGPR
+type: text/vnd.tiddlywiki
+
+RGPR + pythons code for processing GPR data and GPS locations
+
+Last version on Onedrive/DATA/Scripts
+
+''Requirements'':
+
+* pyproj envt for geolocation
+* R environnement with RGPR and cran installed 
+* Both ubuntu149 and MintDesk have the envtsm conda activate pyproj_env
+
+''Tools'':
+
+* set of python code(s) to interpolate and convert gga locations to x
+* set of R scripts with standard processing pipeline (optional) 
+
+''TODO''
+
+*find a way of processing WARR data with RGPR
+
+''Scripts_readme:''
+
+```
+#######################################################
+Processing GPR data in dt1 format and GPS locations file in gga format
+Stefan Nielsen, March 2023
+#######################################################
+
+Combination of one python script and one R script:
+
+conv_gga5.py + any_line.r
+
+In the example below, 'line5' is an example data file. Substitute 'line5' by new name as needed.
+
+1) Python script
+################
+
+The script conv_gga5.py creates lat/lon/topography file from 'gp2' file.
+Three files are output:
+line5.topo, line5.topo_smooth, line5.topo_zero
+If gp2 file is not available, the conv_gga4b.py instead creates only the file
+line5_topo_zero
+based on the fiduciary spacing of the header file line5.hd
+
+Both the topo_smooth (if exists) and the topo_zero file is then used to process gpr data with the R script.
+
+The python script requires a python environment where pyproj is installed.
+For example, on my uni desktop "ubuntu149" activate pyproj by running:
+
+$ conda activate pyproj_env
+
+Input files:
+-----------
+(these are data from GPR after decrypt/export using 'sensorsandsoftware')
+line5.dt1 (gpr data)
+line5.hd  (info or 'header' file)
+line5.gp2 (GPS locations file, if available; if not conv_gga5 will build without topo based on th hd file info)
+
+Output files:
+------------
+line5.gga (extracted lines that contain gga coordinates and elevations)
+line5.topo (reconstructed topography from the gga file)
+line5.topo_smooth (reconstructed and smoothed topography)
+line5.topo_zero (topography is ignored in this one and replaced by flat)
+
+Run the python script as:
+
+$ python conv_gga5.py line5
+
+2) R script
+###########
+
+The R script is run with an R environment where with "RGPR" is installed.
+Several parameters can be customised in the first lines of the script. 
+
+Input files:
+------------
+line5.dt1 (GPR data, 'line5' is example file)
+line5.topo_smooth if available (topo file produced by python script)
+line5.topo_zero to produce no-topography image in all cases
+
+Output files:
+-------------
+line5_rgpr_proc_basci.pdf
+line5_rgpr_proc_migrated_flat.pdf
+line5_rgpr_proc_migrated_topo.pdf
+
+Run as:
+
+$ Rscript any_line.r line5
+
+###############################################################

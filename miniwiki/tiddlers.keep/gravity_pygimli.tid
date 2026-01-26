@@ -1,0 +1,10 @@
+bibtype: manual
+created: 20260123100645289
+modified: 20260123100647645
+title: gravity_pygimli
+type: text/vnd.tiddlywiki
+year: 2023
+
+Full working example with sample data. User-friendly for students of GEOL2151. 
+Python environment geo02 or geo03. Also works at:
+https://geophys-2021.notebooks.danielmaitre.phyip3.dur.ac.uk/

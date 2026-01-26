@@ -1,0 +1,21 @@
+authors: 
+bibtype: report
+created: 20260121132144581
+doi: 
+modified: 20260121132335741
+title: librosa
+type: text/vnd.tiddlywiki
+url: 
+year: 2023
+
+Create new conda env *sound* with librosa obspy etc.
+
+Implement in order:
+
+```python
+conda create -n sound python==3.9 scipy IPython
+conda activate sound
+conda install -c conda-forge obspy
+python -m pip install librosa
+conda insall spyder
+```

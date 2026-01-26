@@ -1,0 +1,60 @@
+bibtype: manual
+created: 20260120182552325
+modified: 20260123140049632
+tags: transcribe audio
+title: whisper
+type: text/vnd.tiddlywiki
+
+This is an audio transcription software that works really well, and is compat with linux.
+
+Install instructions:
+
+```
+sudo apt install python3-venv
+
+python3 -m venv whisper-env
+
+source whisper-env/bin/activate
+
+pip install --upgrade pip setuptools wheel
+
+pip install faster-whisper
+
+pip install tokenizers==0.13.3
+
+pip install faster-whisper
+```
+run as:
+
+```
+python3 transcribe.py inputfle.wav
+```
+
+where trascribe.py is below:
+
+```python
+#############################
+#############################
+import sys
+from faster_whisper import WhisperModel
+
+if len(sys.argv) < 2:
+print("Usage: python3 transcribe.py <audio_file.wav>")
+sys.exit(1)
+
+audio_file = sys.argv[1]
+
+# Load model (you can choose "tiny", "base", "medium", or "large")
+#######
+
+# model = WhisperModel("medium", device="cpu")  # use "cuda" if you have a GPU
+model = WhisperModel("medium", device="cpu", compute_type="float32")
+
+# Transcribe the file
+segments, info = model.transcribe(audio_file)
+
+# Collect text
+full_text = " ".join([segment.text for segment in segments])
+print(full_text.strip())
+#############################
+#############################

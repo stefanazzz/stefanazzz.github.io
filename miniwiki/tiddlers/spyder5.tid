@@ -1,0 +1,13 @@
+bibtype: manual
+created: 20260121134342864
+modified: 20260121134410138
+title: spyder5
+type: text/vnd.tiddlywiki
+
+On ubuntu149 spyder5 is in /usr/bin/spyder5 and works on all envs.
+
+However, to run a specific environment in spyder (for example deeplearn) then in spyder5 do:
+
+```
+Preferences > Python interpreter > Use the following interpreter:  /home/stefan/anaconda3/envs/deeplearn/bin/python
+```

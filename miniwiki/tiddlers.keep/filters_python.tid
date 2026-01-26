@@ -1,0 +1,10 @@
+bibtype: manual
+created: 20260120180613717
+modified: 20260121123832007
+tags: obspy fourier filters
+title: filters_python
+type: text/vnd.tiddlywiki
+year: 2023
+
+Imports atf data files, apply fft and filter using routines defined in utilities.py, transforms.py. Import data as 'Trace' to use further utils from. Python functions and notebook with examples of application.
+

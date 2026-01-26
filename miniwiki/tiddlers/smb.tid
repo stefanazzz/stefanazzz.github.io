@@ -1,0 +1,19 @@
+bibtype: manual
+created: 20260121134103023
+modified: 20260122165824126
+tags: PRS
+title: smb
+type: text/vnd.tiddlywiki
+
+use samba for remote copy of PRS
+
+run this from the destination folder:
+
+```
+smbclient \/\/prsblue02.mds.ad.dur.ac.uk\/lcbt87 -U lcbt87 -m SMB2 -W MDS 
+get filename
+```
+
+Works on hamilton8 to copy from RS storage. Manual pages found at:
+
+https://dur.unidesk.ac.uk/tas/public/ssp/content/detail/knowledgeitem?unid=1738b11d84a3468395b9e12ab3a4c097
