@@ -174,6 +174,8 @@ Error message and password prompt
 
 <li>$:/Publish/DisableSync</li>
 
+<li>$:/Publish/HideEditUI.css</li>
+
 <li>$:/PublishFilter</li>
 
 <li>$:/SiteSubtitle</li>
@@ -297,6 +299,8 @@ Error message and password prompt
 ,
 {"title":"$:/Publish/DisableSync","created":"20260126195439185","modified":"20260126195455512","tags":"","type":"text/vnd.tiddlywiki","text":"$:/config/Syncer/Enabled: no\n$:/config/Syncer/AutoSave: no\n$:/config/ReadOnly: yes\n","revision":"0","bag":"default"}
 ,
+{"title":"$:/Publish/HideEditUI.css","type":"text/css","tags":"$:/tags/Stylesheet","text":"/* Published build only: hide editing UI */\n.tc-edit-btn,\n.tc-tiddler-controls,\n.tc-page-controls,\n.tc-titlebar .tc-btn-invisible,\n.tc-sidebar-header .tc-btn-invisible {\n  display: none !important;\n}\n","revision":"0","bag":"default"}
+,
 {"title":"$:/PublishFilter","created":"20260127151904391","modified":"20260127152005859","tags":"$:/tags/Macro","type":"text/vnd.tiddlywiki","text":"\\define publishFilter()\n-[tag[private]]\n\\end","revision":"0","bag":"default"}
 ,
 {"title":"$:/SiteSubtitle","created":"20260120183033622","modified":"20260120183048533","type":"text/vnd.tiddlywiki","text":"code smippets, links, software use, various instructions...","revision":"0","bag":"default"}
@@ -323,7 +327,7 @@ Error message and password prompt
 ,
 {"title":"export for static","created":"20260123173727706","modified":"20260123173800303","tags":"","type":"text/vnd.tiddlywiki","text":"create a tiddler with \ntitle: $:/config/Plugins/Disabled/$:/plugins/tiddlywiki/tiddlyweb\ntype: text/plain\ncontent:\nyes","revision":"0","bag":"default"}
 ,
-{"title":"export wiki","created":"20260123154303371","modified":"20260126204518203","tags":"","type":"text/vnd.tiddlywiki","text":"to export this wiki into a single html file,\n\n(1) build a system tiddler like this:\n\n```\ntitle: $:/PublishFilter\ntags: $:/tags/Macro\ntype: text/vnd.tiddlywiki\ncontent:\n\\define publishFilter()\n-[tag[private]]\n\\end\n```\nThis will atumatically prevent export of all tiddlers tagged \"private\".\n\n(2) use this bash shell to run tiddlywiki export command and move all additional fieles from folder \"files\" except those in subfolder \"private_files\":\n\n```\n#!/usr/bin/env bash\n# export selectively the wiki to a self-contained index.html\n#\n# Note that a tiddle filter is contained in the wiki \n# that prevents export of \"private\" tags:\n#\n# title: $:/PublishFilter\n# tags: $:/tags/Macro\n# type: text/vnd.tiddlywiki\n# content:\n# \\define publishFilter()\n# -[tag[private]]\n# \\end\n# set -euo pipefail\n\nrm -rf public\nmkdir -p public public/files\n\n# Build single-file wiki\ntiddlywiki . \\\n  --output ./public \\\n  --render \"$:/plugins/tiddlywiki/tiddlyweb/save/offline\" index.html text/plain\n\n\n# Copy attachments, excluding private subfolder\nrsync -av --delete \\\n  --exclude 'private_files/' \\\n  files/ public/files/\n```\n","revision":"0","bag":"default"}
+{"title":"export wiki","created":"20260123154303371","modified":"20260127172339653","tags":"","type":"text/vnd.tiddlywiki","text":"NOTE:\nshell alt_publish.sh creates interactive, searchable html. Problem is it \"appears\" as if it was editable even online.\nother shells seem to produce a non-searchable html environment. \n\n---\n\nto export this wiki into a single html file,\n\n(1) build a system tiddler like this:\n\n```\ntitle: $:/PublishFilter\ntags: $:/tags/Macro\ntype: text/vnd.tiddlywiki\ncontent:\n\\define publishFilter()\n-[tag[private]]\n\\end\n```\nThis will atumatically prevent export of all tiddlers tagged \"private\".\n\n(2) use this bash shell to run tiddlywiki export command and move all additional fieles from folder \"files\" except those in subfolder \"private_files\":\n\n```\n#!/usr/bin/env bash\n# export selectively the wiki to a self-contained index.html\n#\n# Note that a tiddle filter is contained in the wiki \n# that prevents export of \"private\" tags:\n#\n# title: $:/PublishFilter\n# tags: $:/tags/Macro\n# type: text/vnd.tiddlywiki\n# content:\n# \\define publishFilter()\n# -[tag[private]]\n# \\end\n# set -euo pipefail\n\nrm -rf public\nmkdir -p public public/files\n\n# Build single-file wiki\ntiddlywiki . \\\n  --output ./public \\\n  --render \"$:/plugins/tiddlywiki/tiddlyweb/save/offline\" index.html text/plain\n\n\n# Copy attachments, excluding private subfolder\nrsync -av --delete \\\n  --exclude 'private_files/' \\\n  files/ public/files/\n```\n","revision":"0","bag":"default"}
 ,
 {"title":"filters_python","bibtype":"manual","created":"20260120180613717","modified":"20260121123832007","tags":"obspy fourier filters","type":"text/vnd.tiddlywiki","year":"2023","text":"Imports atf data files, apply fft and filter using routines defined in utilities.py, transforms.py. Import data as 'Trace' to use further utils from. Python functions and notebook with examples of application.\n\n","revision":"0","bag":"default"}
 ,
