@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.3.8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>geo02: Stefan Nielsen's tech notes — code smippets, links, software use, various instructions...</title>
+</head>
+<body class="tc-body">
+<!-- THIS WAS ADDED BY STEFAN ON Jan 27 2026 -->
+<!-- ################################ -->
+<div class="tc-sidebar-scrollable" style="overflow: auto;">
+<div class="tc-sidebar-header"><h1 class="tc-site-title">T</h1></div>
+
+<div class="tc-site-subtitle">t</div>
+</div>
+<!-- ################################ -->
+<!-- END EDIT of Jan 27 2026 -->
+
+
+
+
+
+
+<$set name="isStaticExport" value="yes">
+<section class="tc-story-river tc-static-story-river">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="geo02" role="article"><div class="tc-tiddler-title tc-clearfix"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><span class=" tc-reveal" hidden="true"></span><button aria-label="Edit this tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">geo02</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class="tc-reveal"></div><div class=" tc-reveal"><div class="tc-subtitle tc-clearfix">26th January 2026 at 6:35pm</div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div><div class="tc-tiddler-body tc-clearfix tc-reveal"><p>environment file for pygimli</p><h1 class="">THIS IS OUTDATED! </h1><p>CHECK INSTEAD <a class="tc-tiddlylink-external" href="https://github.com/stefanazzz/Geophys3.5" rel="noopener noreferrer" target="_blank">https://github.com/stefanazzz/Geophys3.5</a> –&gt; environment.yml</p><p>for the new environment.</p><p>Obsolete environment:</p><pre class="hljs"><code class="python hljs">name: geo02
+channels:
+- anaconda
+- conda-forge
+- gimli
+- defaults
+dependencies:
+- _libgcc_mutex=<span class="hljs-number">0.1</span>=conda_forge
+- _openmp_mutex=<span class="hljs-number">4.5</span>=1_gnu
+- appdirs=<span class="hljs-number">1.4</span><span class="hljs-number">.3</span>=py_1
+- argon2-cffi=<span class="hljs-number">20.1</span><span class="hljs-number">.0</span>=py37h8f50634_1
+- attrs=<span class="hljs-number">20.1</span><span class="hljs-number">.0</span>=pyh9f0ad1d_0
+- backcall=<span class="hljs-number">0.2</span><span class="hljs-number">.0</span>=py_0
+- binutils_impl_linux-<span class="hljs-number">64</span>=<span class="hljs-number">2.34</span>=h2122c62_9
+- binutils_linux-<span class="hljs-number">64</span>=<span class="hljs-number">2.34</span>=h47ac705_27
+- bleach=<span class="hljs-number">3.1</span><span class="hljs-number">.5</span>=py_0
+- boost=<span class="hljs-number">1.73</span><span class="hljs-number">.0</span>=py37h429e714_1
+- boost-cpp=<span class="hljs-number">1.73</span><span class="hljs-number">.0</span>=h9359b55_3
+- brotlipy=<span class="hljs-number">0.7</span><span class="hljs-number">.0</span>=py37hb5d75c8_1001
+- bzip2=<span class="hljs-number">1.0</span><span class="hljs-number">.8</span>=h516909a_3
+- c-ares=<span class="hljs-number">1.16</span><span class="hljs-number">.1</span>=h516909a_2
+- ca-certificates=<span class="hljs-number">2020.12</span><span class="hljs-number">.5</span>=ha878542_0
+- certifi=<span class="hljs-number">2020.12</span><span class="hljs-number">.5</span>=py37h89c1867_0
+- cffi=<span class="hljs-number">1.14</span><span class="hljs-number">.1</span>=py37h2b28604_0
+- cftime=<span class="hljs-number">1.2</span><span class="hljs-number">.1</span>=py37h03ebfcd_0
+- chardet=<span class="hljs-number">4.0</span><span class="hljs-number">.0</span>=py37h89c1867_0
+- cryptography=<span class="hljs-number">3.3</span><span class="hljs-number">.1</span>=py37h7f0c10b_0
+- curl=<span class="hljs-number">7.71</span><span class="hljs-number">.1</span>=he644dc0_5
+- cycler=<span class="hljs-number">0.10</span><span class="hljs-number">.0</span>=py_2
+- dbus=<span class="hljs-number">1.13</span><span class="hljs-number">.6</span>=he372182_0
+- decorator=<span class="hljs-number">4.4</span><span class="hljs-number">.2</span>=py_0
+- defusedxml=<span class="hljs-number">0.6</span><span class="hljs-number">.0</span>=py_0
+- double-conversion=<span class="hljs-number">3.1</span><span class="hljs-number">.5</span>=he1b5a44_2
+- eigen=<span class="hljs-number">3.3</span><span class="hljs-number">.7</span>=hc9558a2_1001
+- entrypoints=<span class="hljs-number">0.3</span>=py37_0
+- expat=<span class="hljs-number">2.2</span><span class="hljs-number">.9</span>=he1b5a44_2
+- ffmpeg=<span class="hljs-number">4.3</span><span class="hljs-number">.1</span>=h167e202_0
+- fontconfig=<span class="hljs-number">2.13</span><span class="hljs-number">.1</span>=h1056068_1002
+- freetype=<span class="hljs-number">2.10</span><span class="hljs-number">.2</span>=he06d7ca_0
+- future=<span class="hljs-number">0.18</span><span class="hljs-number">.2</span>=py37h89c1867_2
+- gcc_impl_linux-<span class="hljs-number">64</span>=<span class="hljs-number">9.3</span><span class="hljs-number">.0</span>=ha2fd2e4_16
+- gcc_linux-<span class="hljs-number">64</span>=<span class="hljs-number">9.3</span><span class="hljs-number">.0</span>=h44160b2_27
+- geos=<span class="hljs-number">3.8</span><span class="hljs-number">.1</span>=he1b5a44_0
+- gettext=<span class="hljs-number">0.19</span><span class="hljs-number">.8</span><span class="hljs-number">.1</span>=hc5be6a0_1002
+- gl2ps=<span class="hljs-number">1.4</span><span class="hljs-number">.2</span>=he06d7ca_0
+- glew=<span class="hljs-number">2.1</span><span class="hljs-number">.0</span>=he1b5a44_0
+- glib=<span class="hljs-number">2.65</span><span class="hljs-number">.0</span>=h6f030ca_0
+- gmp=<span class="hljs-number">6.2</span><span class="hljs-number">.0</span>=he1b5a44_2
+- gnutls=<span class="hljs-number">3.6</span><span class="hljs-number">.13</span>=h79a8f9a_0
+- gst-plugins-base=<span class="hljs-number">1.14</span><span class="hljs-number">.5</span>=h0935bb2_2
+- gstreamer=<span class="hljs-number">1.14</span><span class="hljs-number">.5</span>=h36ae1b5_2
+- gxx_impl_linux-<span class="hljs-number">64</span>=<span class="hljs-number">9.3</span><span class="hljs-number">.0</span>=hde52e87_16
+- gxx_linux-<span class="hljs-number">64</span>=<span class="hljs-number">9.3</span><span class="hljs-number">.0</span>=ha9dd585_27
+- h5py=<span class="hljs-number">2.10</span><span class="hljs-number">.0</span>=nompi_py37h90cd8ad_104
+- hdf4=<span class="hljs-number">4.2</span><span class="hljs-number">.13</span>=hf30be14_1003
+- hdf5=<span class="hljs-number">1.10</span><span class="hljs-number">.6</span>=nompi_h3c11f04_101
+- icu=<span class="hljs-number">67.1</span>=he1b5a44_0
+- idna=<span class="hljs-number">2.10</span>=pyh9f0ad1d_0
+- imageio=<span class="hljs-number">2.9</span><span class="hljs-number">.0</span>=py_0
+- importlib-metadata=<span class="hljs-number">1.7</span><span class="hljs-number">.0</span>=py37hc8dfbb8_0
+- importlib_metadata=<span class="hljs-number">1.7</span><span class="hljs-number">.0</span>=<span class="hljs-number">0</span>
+- iniconfig=<span class="hljs-number">1.0</span><span class="hljs-number">.1</span>=pyh9f0ad1d_0
+- ipykernel=<span class="hljs-number">5.3</span><span class="hljs-number">.4</span>=py37h5ca1d4c_0
+- ipympl=<span class="hljs-number">0.5</span><span class="hljs-number">.7</span>=pyh9f0ad1d_1
+- ipython=<span class="hljs-number">7.17</span><span class="hljs-number">.0</span>=py37h39e3cac_0
+- ipython_genutils=<span class="hljs-number">0.2</span><span class="hljs-number">.0</span>=py37_0
+- ipywidgets=<span class="hljs-number">7.5</span><span class="hljs-number">.1</span>=py_0
+- jedi=<span class="hljs-number">0.15</span><span class="hljs-number">.2</span>=py37_0
+- jinja2=<span class="hljs-number">2.11</span><span class="hljs-number">.2</span>=py_0
+- jpeg=9d=h516909a_0
+- jsoncpp=<span class="hljs-number">1.8</span><span class="hljs-number">.4</span>=hc9558a2_1002
+- jsonschema=<span class="hljs-number">3.2</span><span class="hljs-number">.0</span>=py37_1
+- jupyter=<span class="hljs-number">1.0</span><span class="hljs-number">.0</span>=py_2
+- jupyter_client=<span class="hljs-number">6.1</span><span class="hljs-number">.6</span>=py_0
+- jupyter_console=<span class="hljs-number">6.1</span><span class="hljs-number">.0</span>=py_0
+- jupyter_core=<span class="hljs-number">4.6</span><span class="hljs-number">.3</span>=py37_0
+- kernel-headers_linux-<span class="hljs-number">64</span>=<span class="hljs-number">2.6</span><span class="hljs-number">.32</span>=h77966d4_13
+- kiwisolver=<span class="hljs-number">1.2</span><span class="hljs-number">.0</span>=py37h99015e2_0
+- krb5=<span class="hljs-number">1.17</span><span class="hljs-number">.1</span>=hfafb76e_2
+- lame=<span class="hljs-number">3.100</span>=h14c3975_1001
+- lcms2=<span class="hljs-number">2.11</span>=hbd6801e_0
+- ld_impl_linux-<span class="hljs-number">64</span>=<span class="hljs-number">2.34</span>=hc38a660_9
+- libblas=<span class="hljs-number">3.8</span><span class="hljs-number">.0</span>=17_openblas
+- libcblas=<span class="hljs-number">3.8</span><span class="hljs-number">.0</span>=17_openblas
+- libclang=<span class="hljs-number">10.0</span><span class="hljs-number">.1</span>=default_hde54327_1
+- libcurl=<span class="hljs-number">7.71</span><span class="hljs-number">.1</span>=hcdd3856_5
+- libedit=<span class="hljs-number">3.1</span><span class="hljs-number">.20191231</span>=he28a2e2_2
+- libev=<span class="hljs-number">4.33</span>=h516909a_0
+- libevent=<span class="hljs-number">2.1</span><span class="hljs-number">.10</span>=hcdb4288_2
+- libffi=<span class="hljs-number">3.2</span><span class="hljs-number">.1</span>=he1b5a44_1007
+- libgcc-devel_linux-<span class="hljs-number">64</span>=<span class="hljs-number">9.3</span><span class="hljs-number">.0</span>=hfd08b2a_16
+- libgcc-ng=<span class="hljs-number">9.3</span><span class="hljs-number">.0</span>=h24d8f2e_16
+- libgfortran-ng=<span class="hljs-number">7.5</span><span class="hljs-number">.0</span>=hdf63c60_16
+- libglu=<span class="hljs-number">9.0</span><span class="hljs-number">.0</span>=he1b5a44_1001
+- libgomp=<span class="hljs-number">9.3</span><span class="hljs-number">.0</span>=h24d8f2e_16
+- libiconv=<span class="hljs-number">1.16</span>=h516909a_0
+- liblapack=<span class="hljs-number">3.8</span><span class="hljs-number">.0</span>=17_openblas
+- libllvm10=<span class="hljs-number">10.0</span><span class="hljs-number">.1</span>=he513fc3_1
+- libnetcdf=<span class="hljs-number">4.7</span><span class="hljs-number">.4</span>=nompi_h84807e1_105
+- libnghttp2=<span class="hljs-number">1.41</span><span class="hljs-number">.0</span>=hab1572f_1
+- libogg=<span class="hljs-number">1.3</span><span class="hljs-number">.2</span>=h516909a_1002
+- libopenblas=<span class="hljs-number">0.3</span><span class="hljs-number">.10</span>=pthreads_hb3c22a3_4
+- libpng=<span class="hljs-number">1.6</span><span class="hljs-number">.37</span>=hed695b0_2
+- libpq=<span class="hljs-number">12.3</span>=h5513abc_0
+- libsodium=<span class="hljs-number">1.0</span><span class="hljs-number">.18</span>=h7b6447c_0
+- libssh2=<span class="hljs-number">1.9</span><span class="hljs-number">.0</span>=hab1572f_5
+- libstdcxx-devel_linux-<span class="hljs-number">64</span>=<span class="hljs-number">9.3</span><span class="hljs-number">.0</span>=h4084dd6_16
+- libstdcxx-ng=<span class="hljs-number">9.3</span><span class="hljs-number">.0</span>=hdf63c60_16
+- libtheora=<span class="hljs-number">1.1</span><span class="hljs-number">.1</span>=h516909a_1003
+- libtiff=<span class="hljs-number">4.1</span><span class="hljs-number">.0</span>=hc7e4089_6
+- libuuid=<span class="hljs-number">2.32</span><span class="hljs-number">.1</span>=h14c3975_1000
+- libvorbis=<span class="hljs-number">1.3</span><span class="hljs-number">.7</span>=he1b5a44_0
+- libwebp-base=<span class="hljs-number">1.1</span><span class="hljs-number">.0</span>=h516909a_3
+- libxcb=<span class="hljs-number">1.13</span>=h14c3975_1002
+- libxkbcommon=<span class="hljs-number">0.10</span><span class="hljs-number">.0</span>=he1b5a44_0
+- libxml2=<span class="hljs-number">2.9</span><span class="hljs-number">.10</span>=h68273f3_2
+- libxslt=<span class="hljs-number">1.1</span><span class="hljs-number">.33</span>=hf705e74_1
+- loguru=<span class="hljs-number">0.5</span><span class="hljs-number">.0</span>=py37hc8dfbb8_0
+- lxml=<span class="hljs-number">4.6</span><span class="hljs-number">.2</span>=py37h77fd288_0
+- lz4-c=<span class="hljs-number">1.9</span><span class="hljs-number">.2</span>=he1b5a44_3
+- markupsafe=<span class="hljs-number">1.1</span><span class="hljs-number">.1</span>=py37h14c3975_1
+- matplotlib=<span class="hljs-number">3.3</span><span class="hljs-number">.2</span>=<span class="hljs-number">0</span>
+- matplotlib-base=<span class="hljs-number">3.3</span><span class="hljs-number">.2</span>=py37hd478181_0
+- meshio=<span class="hljs-number">4.1</span><span class="hljs-number">.1</span>=py_0
+- metis=<span class="hljs-number">5.1</span><span class="hljs-number">.0</span>=he1b5a44_1005
+- mistune=<span class="hljs-number">0.8</span><span class="hljs-number">.4</span>=py37h14c3975_1001
+- more-itertools=<span class="hljs-number">8.4</span><span class="hljs-number">.0</span>=py_0
+- mysql-common=<span class="hljs-number">8.0</span><span class="hljs-number">.21</span>=<span class="hljs-number">0</span>
+- mysql-libs=<span class="hljs-number">8.0</span><span class="hljs-number">.21</span>=hf3661c5_0
+- nb_conda=<span class="hljs-number">2.2</span><span class="hljs-number">.1</span>=py37_2
+- nb_conda_kernels=<span class="hljs-number">2.2</span><span class="hljs-number">.4</span>=py37hc8dfbb8_0
+- nbconvert=<span class="hljs-number">5.6</span><span class="hljs-number">.1</span>=py37_1
+- nbformat=<span class="hljs-number">5.0</span><span class="hljs-number">.7</span>=py_0
+- ncurses=<span class="hljs-number">6.2</span>=he1b5a44_1
+- netcdf4=<span class="hljs-number">1.5</span><span class="hljs-number">.4</span>=nompi_py37hcbfd489_102
+- nettle=<span class="hljs-number">3.4</span><span class="hljs-number">.1</span>=h1bed415_1002
+- notebook=<span class="hljs-number">6.1</span><span class="hljs-number">.4</span>=py37hc8dfbb8_0
+- nspr=<span class="hljs-number">4.28</span>=he1b5a44_0
+- nss=<span class="hljs-number">3.56</span>=he751ad9_0
+- numpy=<span class="hljs-number">1.18</span><span class="hljs-number">.5</span>=py37h8960a57_0
+- obspy=<span class="hljs-number">1.2</span><span class="hljs-number">.2</span>=py37h03ebfcd_0
+- olefile=<span class="hljs-number">0.46</span>=py_0
+- openblas=<span class="hljs-number">0.3</span><span class="hljs-number">.10</span>=pthreads_hf183345_4
+- openh264=<span class="hljs-number">2.1</span><span class="hljs-number">.1</span>=h8b12597_0
+- openssl=<span class="hljs-number">1.1</span><span class="hljs-number">.1</span>i=h7f98852_0
+- packaging=<span class="hljs-number">20.4</span>=pyh9f0ad1d_0
+- pandas=<span class="hljs-number">1.1</span><span class="hljs-number">.1</span>=py37h3340039_0
+- pandoc=<span class="hljs-number">2.10</span><span class="hljs-number">.1</span>=<span class="hljs-number">0</span>
+- pandocfilters=<span class="hljs-number">1.4</span><span class="hljs-number">.2</span>=py37_1
+- parso=<span class="hljs-number">0.5</span><span class="hljs-number">.2</span>=py_0
+- pcre=<span class="hljs-number">8.44</span>=he1b5a44_0
+- pexpect=<span class="hljs-number">4.8</span><span class="hljs-number">.0</span>=py37_1
+- pickleshare=<span class="hljs-number">0.7</span><span class="hljs-number">.5</span>=py37_1001
+- pillow=<span class="hljs-number">7.2</span><span class="hljs-number">.0</span>=py37h718be6c_1
+- pip=<span class="hljs-number">20.2</span><span class="hljs-number">.2</span>=py_0
+- plotly=<span class="hljs-number">4.9</span><span class="hljs-number">.0</span>=pyh9f0ad1d_0
+- pluggy=<span class="hljs-number">0.13</span><span class="hljs-number">.1</span>=py37hc8dfbb8_2
+- proj=<span class="hljs-number">7.0</span><span class="hljs-number">.0</span>=h966b41f_5
+- prometheus_client=<span class="hljs-number">0.8</span><span class="hljs-number">.0</span>=py_0
+- prompt-toolkit=<span class="hljs-number">3.0</span><span class="hljs-number">.5</span>=py_0
+- prompt_toolkit=<span class="hljs-number">3.0</span><span class="hljs-number">.5</span>=<span class="hljs-number">0</span>
+- pthread-stubs=<span class="hljs-number">0.4</span>=h14c3975_1001
+- ptyprocess=<span class="hljs-number">0.6</span><span class="hljs-number">.0</span>=py37_0
+- pugixml=<span class="hljs-number">1.10</span>=he1b5a44_1
+- py=<span class="hljs-number">1.9</span><span class="hljs-number">.0</span>=pyh9f0ad1d_0
+- pybert=<span class="hljs-number">2.3</span><span class="hljs-number">.0_0</span>=py37hf484d3e_0
+- pycparser=<span class="hljs-number">2.20</span>=pyh9f0ad1d_2
+- pygimli=<span class="hljs-number">1.1</span><span class="hljs-number">.1</span>=np118py37hf484d3e_0
+- pygments=<span class="hljs-number">2.6</span><span class="hljs-number">.1</span>=py_0
+- pyopenssl=<span class="hljs-number">20.0</span><span class="hljs-number">.1</span>=pyhd8ed1ab_0
+- pyparsing=<span class="hljs-number">2.4</span><span class="hljs-number">.7</span>=pyh9f0ad1d_0
+- pyqt=<span class="hljs-number">5.12</span><span class="hljs-number">.3</span>=py37h8685d9f_3
+- pyrsistent=<span class="hljs-number">0.16</span><span class="hljs-number">.0</span>=py37h7b6447c_0
+- pysocks=<span class="hljs-number">1.7</span><span class="hljs-number">.1</span>=py37he5f6b98_2
+- pytest=<span class="hljs-number">6.0</span><span class="hljs-number">.1</span>=py37hc8dfbb8_0
+- python=<span class="hljs-number">3.7</span><span class="hljs-number">.8</span>=h6f2ec95_1_cpython
+- python-dateutil=<span class="hljs-number">2.8</span><span class="hljs-number">.1</span>=py_0
+- python_abi=<span class="hljs-number">3.7</span>=1_cp37m
+- pytz=<span class="hljs-number">2020.1</span>=pyh9f0ad1d_0
+- pyvista=<span class="hljs-number">0.25</span><span class="hljs-number">.3</span>=py_0
+- pyzmq=<span class="hljs-number">19.0</span><span class="hljs-number">.1</span>=py37he6710b0_1
+- qt=<span class="hljs-number">5.12</span><span class="hljs-number">.5</span>=h7400415_4
+- qtconsole=<span class="hljs-number">4.7</span><span class="hljs-number">.5</span>=py_0
+- qtpy=<span class="hljs-number">1.9</span><span class="hljs-number">.0</span>=py_0
+- readline=<span class="hljs-number">8.0</span>=he28a2e2_2
+- requests=<span class="hljs-number">2.25</span><span class="hljs-number">.1</span>=pyhd3deb0d_0
+- retrying=<span class="hljs-number">1.3</span><span class="hljs-number">.3</span>=py_2
+- scipy=<span class="hljs-number">1.5</span><span class="hljs-number">.2</span>=py37hb14ef9d_0
+- scooby=<span class="hljs-number">0.5</span><span class="hljs-number">.6</span>=pyh9f0ad1d_0
+- send2trash=<span class="hljs-number">1.5</span><span class="hljs-number">.0</span>=py37_0
+- setuptools=<span class="hljs-number">49.6</span><span class="hljs-number">.0</span>=py37hc8dfbb8_0
+- shapely=<span class="hljs-number">1.7</span><span class="hljs-number">.1</span>=py37hedb1597_0
+- six=<span class="hljs-number">1.15</span><span class="hljs-number">.0</span>=pyh9f0ad1d_0
+- sqlalchemy=<span class="hljs-number">1.3</span><span class="hljs-number">.22</span>=py37h5e8e339_0
+- sqlite=<span class="hljs-number">3.33</span><span class="hljs-number">.0</span>=h4cf870e_0
+- suitesparse=<span class="hljs-number">5.7</span><span class="hljs-number">.2</span>=h717dc36_0
+- sysroot_linux-<span class="hljs-number">64</span>=<span class="hljs-number">2.12</span>=h77966d4_13
+- tbb=<span class="hljs-number">2020.1</span>=hc9558a2_0
+- tbb-devel=<span class="hljs-number">2020.1</span>=hc9558a2_0
+- terminado=<span class="hljs-number">0.8</span><span class="hljs-number">.3</span>=py37_0
+- testpath=<span class="hljs-number">0.4</span><span class="hljs-number">.4</span>=py_0
+- tetgen=<span class="hljs-number">1.5</span><span class="hljs-number">.1</span>=he1b5a44_1000
+- tk=<span class="hljs-number">8.6</span><span class="hljs-number">.10</span>=hed695b0_0
+- toml=<span class="hljs-number">0.10</span><span class="hljs-number">.1</span>=pyh9f0ad1d_0
+- tornado=<span class="hljs-number">6.0</span><span class="hljs-number">.4</span>=py37h8f50634_1
+- traitlets=<span class="hljs-number">4.3</span><span class="hljs-number">.3</span>=py37_0
+- urllib3=<span class="hljs-number">1.26</span><span class="hljs-number">.2</span>=pyhd8ed1ab_0
+- utfcpp=<span class="hljs-number">3.1</span><span class="hljs-number">.1</span>=<span class="hljs-number">0</span>
+- vtk=<span class="hljs-number">9.0</span><span class="hljs-number">.1</span>=no_osmesa_py37h53e2506_100
+- wcwidth=<span class="hljs-number">0.2</span><span class="hljs-number">.5</span>=py_0
+- webencodings=<span class="hljs-number">0.5</span><span class="hljs-number">.1</span>=py37_1
+- wheel=<span class="hljs-number">0.35</span><span class="hljs-number">.1</span>=pyh9f0ad1d_0
+- widgetsnbextension=<span class="hljs-number">3.5</span><span class="hljs-number">.1</span>=py37_0
+- x264=<span class="hljs-number">1</span>!<span class="hljs-number">152.20180806</span>=h14c3975_0
+- xorg-kbproto=<span class="hljs-number">1.0</span><span class="hljs-number">.7</span>=h14c3975_1002
+- xorg-libice=<span class="hljs-number">1.0</span><span class="hljs-number">.10</span>=h516909a_0
+- xorg-libsm=<span class="hljs-number">1.2</span><span class="hljs-number">.3</span>=h84519dc_1000
+- xorg-libx11=<span class="hljs-number">1.6</span><span class="hljs-number">.11</span>=h516909a_0
+- xorg-libxau=<span class="hljs-number">1.0</span><span class="hljs-number">.9</span>=h14c3975_0
+- xorg-libxdmcp=<span class="hljs-number">1.1</span><span class="hljs-number">.3</span>=h516909a_0
+- xorg-libxext=<span class="hljs-number">1.3</span><span class="hljs-number">.4</span>=h516909a_0
+- xorg-libxt=<span class="hljs-number">1.2</span><span class="hljs-number">.0</span>=h516909a_0
+- xorg-xextproto=<span class="hljs-number">7.3</span><span class="hljs-number">.0</span>=h14c3975_1002
+- xorg-xproto=<span class="hljs-number">7.0</span><span class="hljs-number">.31</span>=h14c3975_1007
+- xz=<span class="hljs-number">5.2</span><span class="hljs-number">.5</span>=h516909a_1
+- zeromq=<span class="hljs-number">4.3</span><span class="hljs-number">.2</span>=he6710b0_2
+- zipp=<span class="hljs-number">3.1</span><span class="hljs-number">.0</span>=py_0
+- zlib=<span class="hljs-number">1.2</span><span class="hljs-number">.11</span>=h516909a_1007
+- zstd=<span class="hljs-number">1.4</span><span class="hljs-number">.5</span>=h6597ccf_2
+- pip:
+- environment-kernels==<span class="hljs-number">1.1</span><span class="hljs-number">.1</span>
+- pyqt5-sip==<span class="hljs-number">4.19</span><span class="hljs-number">.18</span>
+- pyqtchart==<span class="hljs-number">5.12</span>
+- pyqtwebengine==<span class="hljs-number">5.12</span><span class="hljs-number">.1</span>
+prefix: /home/stefan/anaconda3/envs/geo02
+
+</code></pre></div>
+</div></p>
+</section>
+</$set>
+
+</body>
+</html>
+

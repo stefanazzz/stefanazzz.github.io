@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.3.8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>RGPR: Stefan Nielsen's tech notes — code smippets, links, software use, various instructions...</title>
+</head>
+<body class="tc-body">
+<!-- THIS WAS ADDED BY STEFAN ON Jan 27 2026 -->
+<!-- ################################ -->
+<div class="tc-sidebar-scrollable" style="overflow: auto;">
+<div class="tc-sidebar-header"><h1 class="tc-site-title">T</h1></div>
+
+<div class="tc-site-subtitle">t</div>
+</div>
+<!-- ################################ -->
+<!-- END EDIT of Jan 27 2026 -->
+
+
+
+
+
+
+<$set name="isStaticExport" value="yes">
+<section class="tc-story-river tc-static-story-river">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="RGPR" role="article"><div class="tc-tiddler-title tc-clearfix"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><span class=" tc-reveal" hidden="true"></span><button aria-label="Edit this tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">RGPR</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class="tc-reveal"></div><div class=" tc-reveal"><div class="tc-subtitle tc-clearfix">21st January 2026 at 1:37pm</div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div><div class="tc-tiddler-body tc-clearfix tc-reveal"><p>RGPR + pythons code for processing GPR data and GPS locations</p><p>Last version on Onedrive/DATA/Scripts</p><p><strong>Requirements</strong>:</p><ul><li>pyproj envt for geolocation</li><li>R environnement with RGPR and cran installed </li><li>Both ubuntu149 and MintDesk have the envtsm conda activate pyproj_env</li></ul><p><strong>Tools</strong>:</p><ul><li>set of python code(s) to interpolate and convert gga locations to x</li><li>set of R scripts with standard processing pipeline (optional) </li></ul><p><strong>TODO</strong></p><ul><li>find a way of processing WARR data with RGPR</li></ul><p><strong>Scripts_readme:</strong></p><pre><code>#######################################################
+Processing GPR data in dt1 format and GPS locations file in gga format
+Stefan Nielsen, March 2023
+#######################################################
+
+Combination of one python script and one R script:
+
+conv_gga5.py + any_line.r
+
+In the example below, 'line5' is an example data file. Substitute 'line5' by new name as needed.
+
+1) Python script
+################
+
+The script conv_gga5.py creates lat/lon/topography file from 'gp2' file.
+Three files are output:
+line5.topo, line5.topo_smooth, line5.topo_zero
+If gp2 file is not available, the conv_gga4b.py instead creates only the file
+line5_topo_zero
+based on the fiduciary spacing of the header file line5.hd
+
+Both the topo_smooth (if exists) and the topo_zero file is then used to process gpr data with the R script.
+
+The python script requires a python environment where pyproj is installed.
+For example, on my uni desktop "ubuntu149" activate pyproj by running:
+
+$ conda activate pyproj_env
+
+Input files:
+-----------
+(these are data from GPR after decrypt/export using 'sensorsandsoftware')
+line5.dt1 (gpr data)
+line5.hd  (info or 'header' file)
+line5.gp2 (GPS locations file, if available; if not conv_gga5 will build without topo based on th hd file info)
+
+Output files:
+------------
+line5.gga (extracted lines that contain gga coordinates and elevations)
+line5.topo (reconstructed topography from the gga file)
+line5.topo_smooth (reconstructed and smoothed topography)
+line5.topo_zero (topography is ignored in this one and replaced by flat)
+
+Run the python script as:
+
+$ python conv_gga5.py line5
+
+2) R script
+###########
+
+The R script is run with an R environment where with "RGPR" is installed.
+Several parameters can be customised in the first lines of the script. 
+
+Input files:
+------------
+line5.dt1 (GPR data, 'line5' is example file)
+line5.topo_smooth if available (topo file produced by python script)
+line5.topo_zero to produce no-topography image in all cases
+
+Output files:
+-------------
+line5_rgpr_proc_basci.pdf
+line5_rgpr_proc_migrated_flat.pdf
+line5_rgpr_proc_migrated_topo.pdf
+
+Run as:
+
+$ Rscript any_line.r line5
+
+###############################################################</code></pre></div>
+</div></p>
+</section>
+</$set>
+
+</body>
+</html>
+
