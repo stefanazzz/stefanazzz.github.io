@@ -148,6 +148,24 @@ Error message and password prompt
 
 <li>$:/config/NewJournal/Text</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/theme</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/timestamp</li>
+
 <li>$:/config/ReadOnly</li>
 
 <li>$:/config/RelinkOnRename</li>
@@ -222,6 +240,8 @@ Error message and password prompt
 
 <li>librosa</li>
 
+<li>old_Welcome</li>
+
 <li>parallel computing</li>
 
 <li>Preview PDF in tiddly</li>
@@ -254,8 +274,6 @@ Error message and password prompt
 
 <li>Welcome</li>
 
-<li>Welcome1</li>
-
 <li>whisper</li>
 
 </ul>
@@ -272,6 +290,24 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 <script class="tiddlywiki-tiddler-store" type="application/json">[
 {"title":"$:/config/NewJournal/Text","created":"20260120183226501","creator":"Stefan","modified":"20260120183339164","modifier":"Stefan","type":"text/vnd.tiddlywiki","text":"text goes here","revision":"0","bag":"default"}
+,
+{"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all","created":"20260127181231556","modified":"20260127181232333","type":"text/vnd.tiddlywiki","text":"hide","revision":"0","bag":"default"}
+,
+{"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home","created":"20260127181225300","modified":"20260127181228877","type":"text/vnd.tiddlywiki","text":"hide","revision":"0","bag":"default"}
+,
+{"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions","created":"20260127180907894","modified":"20260127180945518","type":"text/vnd.tiddlywiki","text":"hide","revision":"0","bag":"default"}
+,
+{"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler","created":"20260127180942774","modified":"20260127181158805","type":"text/vnd.tiddlywiki","text":"show","revision":"0","bag":"default"}
+,
+{"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview","created":"20260127181405428","modified":"20260127181406189","type":"text/vnd.tiddlywiki","text":"hide","revision":"0","bag":"default"}
+,
+{"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh","created":"20260127181239501","modified":"20260127181240668","type":"text/vnd.tiddlywiki","text":"hide","revision":"0","bag":"default"}
+,
+{"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview","created":"20260127180848574","modified":"20260127180848574","type":"text/vnd.tiddlywiki","text":"show","revision":"0","bag":"default"}
+,
+{"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/theme","created":"20260127181207341","modified":"20260127181209412","type":"text/vnd.tiddlywiki","text":"hide","revision":"0","bag":"default"}
+,
+{"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/timestamp","created":"20260127181234725","modified":"20260127181236044","type":"text/vnd.tiddlywiki","text":"hide","revision":"0","bag":"default"}
 ,
 {"title":"$:/config/ReadOnly","text":"yes\n","revision":"0","bag":"default"}
 ,
@@ -327,7 +363,7 @@ Error message and password prompt
 ,
 {"title":"export for static","created":"20260123173727706","modified":"20260123173800303","tags":"","type":"text/vnd.tiddlywiki","text":"create a tiddler with \ntitle: $:/config/Plugins/Disabled/$:/plugins/tiddlywiki/tiddlyweb\ntype: text/plain\ncontent:\nyes","revision":"0","bag":"default"}
 ,
-{"title":"export wiki","created":"20260123154303371","modified":"20260127172339653","tags":"","type":"text/vnd.tiddlywiki","text":"NOTE:\nshell alt_publish.sh creates interactive, searchable html. Problem is it \"appears\" as if it was editable even online.\nother shells seem to produce a non-searchable html environment. \n\n---\n\nto export this wiki into a single html file,\n\n(1) build a system tiddler like this:\n\n```\ntitle: $:/PublishFilter\ntags: $:/tags/Macro\ntype: text/vnd.tiddlywiki\ncontent:\n\\define publishFilter()\n-[tag[private]]\n\\end\n```\nThis will atumatically prevent export of all tiddlers tagged \"private\".\n\n(2) use this bash shell to run tiddlywiki export command and move all additional fieles from folder \"files\" except those in subfolder \"private_files\":\n\n```\n#!/usr/bin/env bash\n# export selectively the wiki to a self-contained index.html\n#\n# Note that a tiddle filter is contained in the wiki \n# that prevents export of \"private\" tags:\n#\n# title: $:/PublishFilter\n# tags: $:/tags/Macro\n# type: text/vnd.tiddlywiki\n# content:\n# \\define publishFilter()\n# -[tag[private]]\n# \\end\n# set -euo pipefail\n\nrm -rf public\nmkdir -p public public/files\n\n# Build single-file wiki\ntiddlywiki . \\\n  --output ./public \\\n  --render \"$:/plugins/tiddlywiki/tiddlyweb/save/offline\" index.html text/plain\n\n\n# Copy attachments, excluding private subfolder\nrsync -av --delete \\\n  --exclude 'private_files/' \\\n  files/ public/files/\n```\n","revision":"0","bag":"default"}
+{"title":"export wiki","created":"20260123154303371","modified":"20260127175507798","tags":"","type":"text/vnd.tiddlywiki","text":"To export this wiki into a single html file,\n\n1. build a system tiddler like this:\n\n```\ntitle: $:/PublishFilter\ntags: $:/tags/Macro\ntype: text/vnd.tiddlywiki\ncontent:\n\\define publishFilter()\n-[tag[private]]\n\\end\n```\nThis will automatically prevent export of all tiddlers tagged \"private\".\n\n2. use this bash shell to run tiddlywiki export command and move all additional fieles from folder \"files\" except those in subfolder \"private_files\":\n\n```\n#!/usr/bin/env bash\n# export selectively the wiki to public/index.html + public/files/ \n#\n# Note that a tiddle filter has been added in the wiki \n# to prevents export of \"private\" tags:\n#\n# title: $:/PublishFilter\n# tags: $:/tags/Macro\n# type: text/vnd.tiddlywiki\n# content:\n# \\define publishFilter()\n# -[tag[private]]\n# \\end\n\nset -euo pipefail\n\nrm -rf public\nmkdir -p public public/files\nmkdir -p tiddlers\n\n# --- Temporary tiddlers for published build only ---\n# these allow to hide the ghost \"edit\" button from the exported version. \n\nTMP_HIDE_CSS_TID=\"tiddlers/\\$__Publish_HideEditUI.tid\"\nTMP_READONLY_TID=\"tiddlers/\\$__Publish_ReadOnly.tid\"\n\ncat > \"$TMP_HIDE_CSS_TID\" \u003C\u003C'EOF'\ntitle: $:/Publish/HideEditUI.css\ntype: text/css\ntags: $:/tags/Stylesheet\n\n/* Published build only: hide editing UI */\n.tc-edit-btn,\n.tc-tiddler-controls,\n.tc-page-controls,\n.tc-titlebar .tc-btn-invisible,\n.tc-sidebar-header .tc-btn-invisible {\n  display: none !important;\n}\nEOF\n\ncat > \"$TMP_READONLY_TID\" \u003C\u003C'EOF'\ntitle: $:/config/ReadOnly\ntype: text/plain\ntext: yes\nEOF\n\ncleanup() {\n  rm -f \"$TMP_HIDE_CSS_TID\" \"$TMP_READONLY_TID\"\n}\ntrap cleanup EXIT\n# -------------------------------------------------------------------\n\n# Build single-file wiki (public/index.html)\ntiddlywiki . \\\n  --output ./public \\\n  --render \"$:/plugins/tiddlywiki/tiddlyweb/save/offline\" index.html text/plain\n\n# Copy attachments, excluding private subfolder\nrsync -av --delete \\\n  --exclude 'private_files/' \\\n  files/ public/files/\n```\n3. Move public/ to github local repository:\n\n```\noptional cleanup:\n\\rm -r /home/stefan/Desktop/GITHUB/stefanazzz.github.io-master/miniwiki/\nsync public and miniwiki repo:\nrsync -aurv public/ /home/stefan/Desktop/GITHUB/stefanazzz.github.io-master/miniwiki/","revision":"0","bag":"default"}
 ,
 {"title":"filters_python","bibtype":"manual","created":"20260120180613717","modified":"20260121123832007","tags":"obspy fourier filters","type":"text/vnd.tiddlywiki","year":"2023","text":"Imports atf data files, apply fft and filter using routines defined in utilities.py, transforms.py. Import data as 'Trace' to use further utils from. Python functions and notebook with examples of application.\n\n","revision":"0","bag":"default"}
 ,
@@ -346,6 +382,8 @@ Error message and password prompt
 {"title":"latexml","authors":"","bibtype":"report","created":"20260121130621935","doi":"","modified":"20260121132017690","type":"text/vnd.tiddlywiki","url":"","year":"2023","text":"Will convert latex book with chapters allowing:\n\n* Structured web page with links to each chapter \n* Conversion equations to mathjax \n* Use of vector ghraphs and bitmap in figures \n* cross-refrencing of equations \n* bibliography \n* cross-ref of bib refereneces\n\nfolder:\n\nOneDrive/Classes/ESD/Chapters\n\u003Cbr>  subfolder: Figures/\n\nfiles:\n\n* ltxml_comile.sh (alsoe reproduced below)\n* Seismology.tex (main file, referencing other fles in same folder)\n\nbash shell:\n\n```python\n#!/bin/bash \n\nfname=Seismology # name of the input latex file (omit .tex) \n\nfbib=Seismology_bibliography.bib # name of the input bibtex file database \n\n#bibliogrpahuc database convert to xml. RUN ONLY ONCE TO CREATE OR UPDATE bibfile.bib in the local folder: \n\n#latexml --dest=$fbib.xml $fbib \n\n#create the xml from input tex file ($1 in input is filename WITHOUT .tex) \n\nlatexml --dest $fname.xml $fname \n\n#post proc and creation of html file(s). In this example the navigation and the output is split at chapter level. \n\nlatexmlpost --format=html5 --javascript='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML' --splitat=chapter -dest=OutputHTML/$fname.html $fname \n\n##### end\n```","revision":"0","bag":"default"}
 ,
 {"title":"librosa","authors":"","bibtype":"report","created":"20260121132144581","doi":"","modified":"20260121132335741","type":"text/vnd.tiddlywiki","url":"","year":"2023","text":"Create new conda env *sound* with librosa obspy etc.\n\nImplement in order:\n\n```python\nconda create -n sound python==3.9 scipy IPython\nconda activate sound\nconda install -c conda-forge obspy\npython -m pip install librosa\nconda insall spyder\n```\n","revision":"0","bag":"default"}
+,
+{"title":"old_Welcome","created":"20260127163520076","modified":"20260127174749819","tags":"","type":"text/vnd.tiddlywiki","text":"\n!! Hello! Welcome to my tech and other notes \n[img[Screenshot from 2025-10-30 14-20-45.png]]\u003Cbr>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //--whaf??//\n\nExplore:\n\n\u003C$list filter=\"[all[tiddlers]!is[system]sort[title]]\"\n       start={{$:/state/page}}\n       limit=\"all\">\n\u003C$link>\u003C$view field=\"title\"/>\u003C/$link>\u003Cbr>\n\u003C/$list>\n","revision":"0","bag":"default"}
 ,
 {"title":"parallel computing","authors":"","bibtype":"report","created":"20260121132432676","doi":"","modified":"20260121132841338","tags":"Hamilton threads","type":"text/vnd.tiddlywiki","url":"","year":"2023","text":"How to make parallel computing on multiple nodes when using Hamilton\n\nInstructions found in an email from Karen Bower:\n\nIn case the threads are in fact processes, these are the magic lines I mentioned this morning.  Put these in your batch script below any \"module load\" commands but above your python command: \n\n```\nunset OMP_PLACES\n\nunset OMP_PROC_BIND\n```\nOnce a job is running, it's fine to ssh to the compute node to check up on it, as long as you exit promptly when the job finishes.  To see which node a job is running on, use \n\n```\nsacct -j \u003Cjobid> -o node\n```\nthen you can \n\n```\nssh \u003Cnodename>\n```\nfrom a login node.\n \n\nYou could also try an interactive job and run your code from there, which can be an effective way to debug things like this.  For example:\n\n```\nsrun --pty -t 02:00:00 --mem=5G -c 10 bash\n```\n  \u003Cwait until job starts and prompt accepts commands again>\n\n```\nmodule load python/3.10.8\n\npython \u003Cyour code>\n\npython \u003Cyour code>  &   \n```\n\nThe '&' will run the python code in the background, so you can use the prompt for other commands, like seeing what the code is doing!","revision":"0","bag":"default"}
 ,
@@ -378,8 +416,6 @@ Error message and password prompt
 {"title":"ves.pygimli","bibtype":"manual","created":"20260121123837345","modified":"20260126183701106","type":"text/vnd.tiddlywiki","text":"Custom codes for Vertical Electrical Survey\n\n! THIS IS OUTDATED! \n\nCHECK INSTEAD \n\n!! https://github.com/stefanazzz/Geophys3.5/tree/main/Resistivity/1D\n\n\nObsolete environment:\nOneDrive/Geophys-master/Resistivity/3.2/Schlum/schlum2.py\n","revision":"0","bag":"default"}
 ,
 {"title":"Welcome","created":"20260120170902816","modified":"20260127170038225","tags":"","type":"text/vnd.tiddlywiki","text":"\n!! Hello! Welcome to my tech and other notes \n[img[Screenshot from 2025-10-30 14-20-45.png]]\u003Cbr>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //--whaf??//\n\nExplore:\n\n\u003C!-- STATIC EXPORT: hide private -->\n\u003C$reveal type=\"match\" state=\"$:/isStaticExport\" text=\"yes\">\n\u003C$list filter=\"[all[tiddlers]!is[system]!tag[private]sort[title]]\" limit=\"all\">\n\u003C$link>\u003C$view field=\"title\"/>\u003C/$link>\u003Cbr>\n\u003C/$list>\n\u003C/$reveal>\n\n\u003C!-- NORMAL WIKI: show everything -->\n\u003C$reveal type=\"nomatch\" state=\"$:/isStaticExport\" text=\"yes\">\n\u003C$list filter=\"[all[tiddlers]!is[system]sort[title]]\" limit=\"all\">\n\u003C$link>\u003C$view field=\"title\"/>\u003C/$link>\u003Cbr>\n\u003C/$list>\n\u003C/$reveal>\n\n\n\n\n\n","revision":"0","bag":"default"}
-,
-{"title":"Welcome1","created":"20260127163520076","modified":"20260127163524044","tags":"","type":"text/vnd.tiddlywiki","text":"\n!! Hello! Welcome to my tech and other notes \n[img[Screenshot from 2025-10-30 14-20-45.png]]\u003Cbr>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //--whaf??//\n\nExplore:\n\n\u003C$list filter=\"[all[tiddlers]!is[system]sort[title]]\"\n       start={{$:/state/page}}\n       limit=\"all\">\n\u003C$link>\u003C$view field=\"title\"/>\u003C/$link>\u003Cbr>\n\u003C/$list>\n","revision":"0","bag":"default"}
 ,
 {"title":"whisper","bibtype":"manual","created":"20260120182552325","modified":"20260123140049632","tags":"transcribe audio","type":"text/vnd.tiddlywiki","text":"This is an audio transcription software that works really well, and is compat with linux.\n\nInstall instructions:\n\n```\nsudo apt install python3-venv\n\npython3 -m venv whisper-env\n\nsource whisper-env/bin/activate\n\npip install --upgrade pip setuptools wheel\n\npip install faster-whisper\n\npip install tokenizers==0.13.3\n\npip install faster-whisper\n```\nrun as:\n\n```\npython3 transcribe.py inputfle.wav\n```\n\nwhere trascribe.py is below:\n\n```python\n#############################\n#############################\nimport sys\nfrom faster_whisper import WhisperModel\n\nif len(sys.argv) \u003C 2:\nprint(\"Usage: python3 transcribe.py \u003Caudio_file.wav>\")\nsys.exit(1)\n\naudio_file = sys.argv[1]\n\n# Load model (you can choose \"tiny\", \"base\", \"medium\", or \"large\")\n#######\n\n# model = WhisperModel(\"medium\", device=\"cpu\")  # use \"cuda\" if you have a GPU\nmodel = WhisperModel(\"medium\", device=\"cpu\", compute_type=\"float32\")\n\n# Transcribe the file\nsegments, info = model.transcribe(audio_file)\n\n# Collect text\nfull_text = \" \".join([segment.text for segment in segments])\nprint(full_text.strip())\n#############################\n#############################\n","revision":"0","bag":"default"}
 
